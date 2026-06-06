@@ -1,0 +1,146 @@
+/* =========================
+   NOTIFICATION BAR
+========================= */
+
+.notification_bar {
+
+    width: 100%;
+
+    background:
+    var(--color-primary);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    padding: 14px 0;
+
+}
+
+/* =========================
+   LEFT LABEL
+========================= */
+
+.notification_label {
+
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    padding-left: 40px;
+
+    padding-right: 24px;
+
+    gap: 20px;
+
+    font-weight: var(--fw-bold);
+
+}
+
+/* DIVIDER */
+
+.divider {
+
+    width: 1px;
+    height: 24px;
+
+    background: rgba(255,255,255,0.5);
+
+}
+
+/* =========================
+   MARQUEE AREA
+========================= */
+
+.notification_marquee {
+
+    flex: 1;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+/* MOVING TRACK */
+
+.notification_track {
+
+    display: flex;
+
+    gap: 80px;
+
+    white-space: nowrap;
+
+    width: max-content;
+
+    animation:
+    marquee 30s linear infinite;
+
+}
+
+/* TEXT */
+
+.notification_track span {
+
+    font-size: var(--fs-body);
+
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes marquee {
+
+    from {
+
+        transform:
+        translateX(70%);
+
+    }
+
+    to {
+
+        transform:
+        translateX(-100%);
+
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .notification_label {
+
+        padding-left: 20px;
+
+        padding-right: 16px;
+
+        gap: 12px;
+
+    }
+
+    .notification_track {
+
+        gap: 50px;
+
+    }
+
+}
+
+.notification_bar:hover .notification_track {
+
+    animation-play-state: paused;
+
+    cursor: pointer;
+
+}

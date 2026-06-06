@@ -1,0 +1,140 @@
+/* First Banner */
+#firstBanner {
+    width: 100%;
+    background-color: var(--color-bg-primary);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 0.9375rem 0; /* 15px → rem */
+    gap: 0.625rem; /* 10px */
+}
+
+/* LEFT LOGO */
+#firstBanner .leftLogo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstBanner #logo1 {
+    width: clamp(5rem, 10vw, 9.375rem); /* 80px, 150px */
+    height: auto;
+}
+
+/* CENTER CONTENT */
+#firstBanner .centerContent {
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.9375rem; /* 15px */
+    text-align: center;
+}
+
+#firstBanner #logo2 {
+    width: clamp(6.25rem, 12vw, 11.25rem); /* 100px, 180px */
+    height: auto;
+}
+
+#firstBanner .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem; /* 4px */
+
+    margin: 0;
+    max-width: 100%;
+}
+
+#firstBanner .content h1 {
+    color: var(--color-text-primary);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+
+    line-height: 1.2;
+    word-break: break-word;
+}
+
+#firstBanner .content h2 {
+    color: var(--color-text-primary);
+    font-size: var(--fs-h3);
+    line-height: 1.3;
+}
+
+/* RIGHT LOGO */
+#firstBanner .rightLogo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.9375rem;  /* 15px */
+    padding-bottom: 0.9375rem;
+}
+
+#firstBanner #logo3 {
+    width: clamp(4.375rem, 9vw, 8.125rem); /* 70px, 130px */
+    height: auto;
+}
+
+/* --- */
+
+/* 🔥 TABLET */
+@media (max-width: 62rem) { /* 992px */
+
+    #firstBanner {
+        flex-wrap: wrap;
+        padding: 1.25rem 0.625rem; /* 20px 10px */
+    }
+
+    #firstBanner .leftLogo,
+    #firstBanner .rightLogo {
+        flex: 1 1 30%;
+    }
+
+    #firstBanner .centerContent {
+        flex: 1 1 100%;
+        order: -1;
+    }
+}
+
+/* --- */
+
+/* 🔥 MOBILE */
+@media (max-width: 36rem) { /* 576px */
+
+    #firstBanner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #firstBanner .leftLogo,
+    #firstBanner .rightLogo,
+    #firstBanner .centerContent {
+        flex: unset;
+        width: 100%;
+    }
+
+    #firstBanner #logo1,
+    #firstBanner #logo3 {
+        width: 5rem; /* 80px */
+    }
+
+    #firstBanner #logo2 {
+        width: 7.5rem; /* 120px */
+    }
+
+    #firstBanner .content h1 {
+        font-size: var(--fs-h3);
+    }
+
+    #firstBanner .content h2 {
+        font-size: var(--fs-para);
+    }
+}

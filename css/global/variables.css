@@ -1,0 +1,106 @@
+:root {
+    /* COLORS */
+
+    /* ======================================================
+     LIGHT THEME
+  ====================================================== */
+
+  /* BRAND COLORS */
+  --color-primary: #D62828;
+  --color-primary-hover: #B71C1C;
+
+  --color-secondary: #003049;
+  --color-accent: #F77F00;
+
+  /* TEXT COLORS */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #555555;
+  --color-text-light: #777777;
+
+  /* BACKGROUND COLORS */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F5F7FA;
+  --color-bg-tertiary: #EAECEF;
+
+  /* CARD / SURFACE */
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F1F3F5;
+
+  /* BORDER */
+  --color-border: #DADDE1;
+
+  /* STATUS COLORS */
+  --color-success: #2E7D32;
+  --color-warning: #ED6C02;
+  --color-error: #D32F2F;
+  --color-info: #0288D1;
+
+  /* SHADOW */
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+
+    /* FONT FAMILY */
+  --font-primary: "Noto Sans", sans-serif;
+
+  /* FONT WEIGHTS */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* RESPONSIVE TYPOGRAPHY */
+  --fs-h1: clamp(2.25rem, 1.8rem + 2vw, 3rem);
+  /* 36px → 48px */
+  --fs-h2: clamp(1.75rem, 1.4rem + 1.5vw, 2rem);
+  /* 28px → 32px */
+  --fs-h3: clamp(1.25rem, 1.1rem + 1vw, 1.5rem);
+  /* 20px → 24px */
+  --fs-body: clamp(0.95rem, 0.9rem + 0.2vw, 1rem);
+  /* 15px → 16px */
+  --fs-para: clamp(0.85rem, 0.8rem + 0.2vw, 0.875rem);
+  /* 13px → 14px */
+  
+}
+
+/* ======================================================
+   DARK THEME
+====================================================== */
+
+body.dark-theme {
+
+  /* BRAND COLORS */
+  --color-primary: #FF4D4D;
+  --color-primary-hover: #FF6666;
+
+  --color-secondary: #4DA3FF;
+  --color-accent: #FFB347;
+
+  /* TEXT COLORS */
+  --color-text-primary: #F5F5F5;
+  --color-text-secondary: #C7C7C7;
+  --color-text-light: #9E9E9E;
+
+  /* BACKGROUND COLORS */
+  --color-bg-primary: #121212;
+  --color-bg-secondary: #1E1E1E;
+  --color-bg-tertiary: #2A2A2A;
+
+  /* CARD / SURFACE */
+  --color-surface: #1F1F1F;
+  --color-surface-hover: #2B2B2B;
+
+  /* BORDER */
+  --color-border: #3A3A3A;
+
+  /* STATUS COLORS */
+  --color-success: #66BB6A;
+  --color-warning: #FFA726;
+  --color-error: #EF5350;
+  --color-info: #42A5F5;
+
+  /* SHADOW */
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.35);
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.45);
+
+}

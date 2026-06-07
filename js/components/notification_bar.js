@@ -6,8 +6,11 @@ fetch('../components/notification_bar.html')
 
 async function loadNotifications() {
   try {
+    const currentLanguage =
+    localStorage.getItem("language") || "en";
+
     const response = await fetch(
-      "http://localhost:1337/api/notification-bars"
+    `http://localhost:1337/api/notification-bars?locale=${currentLanguage}`
     );
 
     const result = await response.json();

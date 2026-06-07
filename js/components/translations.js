@@ -54,7 +54,7 @@ const translations = {
         "महाराष्ट्र शासन",
 
         department:
-        "महाराष्ट्र अग्निशमन व आपत्कालीन सेवा",    
+        "महाराष्ट्र अग्निशमन व आपत्कालीन सेवा",
 
         notifications:
         "अधिसूचना"
@@ -68,6 +68,9 @@ const translations = {
 ========================= */
 
 function changeLanguage(lang) {
+
+    // Save selected language
+    localStorage.setItem("language", lang);
 
     const navText =
     document.querySelector(
@@ -95,8 +98,15 @@ function changeLanguage(lang) {
 
     }
 
-    const governmentText = document.querySelector('[data-key="government"]');
-    const departmentText = document.querySelector('[data-key="department"]');
+    const governmentText =
+    document.querySelector(
+        '[data-key="government"]'
+    );
+
+    const departmentText =
+    document.querySelector(
+        '[data-key="department"]'
+    );
 
     if(governmentText) {
 
@@ -114,7 +124,10 @@ function changeLanguage(lang) {
 
     }
 
-    const notificationsText = document.querySelector('[data-key="notifications"]');
+    const notificationsText =
+    document.querySelector(
+        '[data-key="notifications"]'
+    );
 
     if(notificationsText) {
 
@@ -124,4 +137,28 @@ function changeLanguage(lang) {
 
     }
 
+    // Reload CMS notifications
+    if(typeof loadNotifications === "function") {
+
+        loadNotifications();
+
+    }
+
 }
+
+/* =========================
+   LOAD SAVED LANGUAGE
+========================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        const savedLanguage =
+        localStorage.getItem("language")
+        || "en";
+
+        changeLanguage(savedLanguage);
+
+    }
+);

@@ -20,7 +20,7 @@ async function loadNotifications() {
 
       const span = document.createElement("span");
 
-      span.textContent = item.title;
+      span.textContent = item.Title;
 
       track.appendChild(span);
 

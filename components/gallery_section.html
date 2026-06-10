@@ -1,69 +1,129 @@
-<section class="gallery-section">
-  <div class="gallery-header">
-    <h2>Gallery</h2>
+<!-- ========================= -->
+<!-- ===== MEDIA GALLERY ===== -->
+<!-- ========================= -->
 
-    <div class="gallery-controls">
-      <a href="#" class="see-all"> See All </a>
+<section class="mediaGallery">
+  <!-- TOP BAR -->
 
-      <button id="galleryPrev">❮</button>
+  <div class="galleryTop">
+    <div class="galleryHeading">
+      <h2>Media Gallery</h2>
+    </div>
 
-      <button id="galleryNext">❯</button>
+    <div class="galleryControls">
+      <button class="seeAllBtn">See All</button>
+
+      <button class="galleryArrow leftArrow">&#10094;</button>
+
+      <button class="galleryArrow rightArrow">&#10095;</button>
     </div>
   </div>
 
-  <div class="gallery-wrapper">
-    <div class="gallery-track">
-      <div class="gallery-item image">
+  <!-- GALLERY -->
+
+  <div class="galleryWrapper">
+    <div class="galleryTrack">
+      <!-- IMAGE CARD -->
+
+      <div class="galleryCard imageCard">
         <img
-          src="https://images.unsplash.com/photo-1575867094974-9e16b6f55360"
+          src="https://images.unsplash.com/photo-1614338577234-8747c0b37571?w=800"
           alt=""
         />
+
+        <div
+          class="galleryOverlay viewImage"
+          data-image="https://images.unsplash.com/photo-1552244935-439697eea0bd?w=1200"
+        >
+          <span>View Image</span>
+        </div>
       </div>
 
-      <div class="gallery-item video">
-        <video muted>
-          <source
-            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>
+      <!-- VIDEO CARD -->
 
-      <div class="gallery-item image">
+      <div class="galleryCard videoCard">
         <img
-          src="https://images.unsplash.com/photo-1517048676732-d65bc937f952"
+          src="https://images.unsplash.com/photo-1700794871938-36fff73892a4?w=800"
           alt=""
         />
+
+        <div
+          class="playButton playVideo"
+          data-video="https://www.w3schools.com/html/mov_bbb.mp4"
+        >
+          ▶
+        </div>
       </div>
 
-      <div class="gallery-item image">
+      <!-- IMAGE CARD -->
+
+      <div class="galleryCard imageCard">
         <img
-          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+          src="https://plus.unsplash.com/premium_photo-1683133357376-ee581f35158c?w=800"
           alt=""
         />
+
+        <div
+          class="galleryOverlay viewImage"
+          data-image="https://images.unsplash.com/photo-1642541400994-5bf3c9c0a8d9?w=1200"
+        >
+          <span>View Image</span>
+        </div>
       </div>
 
-      <div class="gallery-item video">
-        <video muted>
-          <source
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>
+      <!-- VIDEO CARD -->
 
-      <div class="gallery-item image">
+      <div class="galleryCard videoCard">
         <img
-          src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a"
+          src="https://images.unsplash.com/photo-1642323673567-bf38f693950b?w=800"
           alt=""
         />
+
+        <div
+          class="playButton playVideo"
+          data-video="https://www.w3schools.com/html/movie.mp4"
+        >
+          ▶
+        </div>
+      </div>
+
+      <!-- IMAGE CARD -->
+
+      <div class="galleryCard imageCard">
+        <img
+          src="https://images.unsplash.com/photo-1731842353630-7fe8582bb031?w=800"
+          alt=""
+        />
+
+        <div
+          class="galleryOverlay viewImage"
+          data-image="https://images.unsplash.com/photo-1731842353630-7fe8582bb031?w=1200"
+        >
+          <span>View Image</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="gallery-modal">
-  <span class="close-modal"> × </span>
+<!-- ========================= -->
+<!-- ===== IMAGE MODAL ====== -->
+<!-- ========================= -->
 
-  <div class="modal-content"></div>
+<div class="imageModal">
+  <span class="closeImageModal"> &times; </span>
+
+  <img class="modalImage" src="" alt="" />
+</div>
+
+<!-- ========================= -->
+<!-- ===== VIDEO MODAL ====== -->
+<!-- ========================= -->
+
+<div class="videoModal">
+  <span class="closeVideoModal"> &times; </span>
+
+  <video class="modalVideo" controls autoplay>
+    <source src="" type="video/mp4" />
+  </video>
 </div>

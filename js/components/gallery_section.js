@@ -1,117 +1,244 @@
-fetch('../components/gallery_section.html')
-.then(res => res.text())
-.then(data => {
-  document.getElementById('gallery_sec').innerHTML = data;
-});
+function initializeGallery() {
 
-const track =
-document.querySelector(".gallery-track");
+    /* =========================
+       ELEMENTS
+    ========================== */
 
-const items =
-document.querySelectorAll(".gallery-item");
+    const galleryTrack =
+    document.querySelector(".galleryTrack");
 
-let currentIndex = 0;
+    const leftArrow =
+    document.querySelector(".leftArrow");
 
-document
-.getElementById("galleryNext")
-.addEventListener("click",()=>{
+    const rightArrow =
+    document.querySelector(".rightArrow");
 
-    const visible =
-    window.innerWidth < 768
-    ? 1
-    : window.innerWidth < 992
-    ? 3
-    : 4;
+    const seeAllBtn =
+    document.querySelector(".seeAllBtn");
 
-    if(
-        currentIndex <
-        items.length - visible
-    ){
+    const imageModal =
+    document.querySelector(".imageModal");
 
-        currentIndex++;
+    const modalImage =
+    document.querySelector(".modalImage");
 
-    }
+    const viewButtons =
+    document.querySelectorAll(".viewImage");
 
-    updateGallery();
+    const closeImageModal =
+    document.querySelector(".closeImageModal");
 
-});
+    const videoModal =
+    document.querySelector(".videoModal");
 
-document
-.getElementById("galleryPrev")
-.addEventListener("click",()=>{
+    const modalVideo =
+    document.querySelector(".modalVideo");
 
-    if(currentIndex > 0){
+    const playButtons =
+    document.querySelectorAll(".playVideo");
 
-        currentIndex--;
+    const closeVideoModal =
+    document.querySelector(".closeVideoModal");
 
-    }
+    /* =========================
+       SCROLL RIGHT
+    ========================== */
 
-    updateGallery();
+    rightArrow?.addEventListener(
+      "click",
+      () => {
 
-});
+        galleryTrack.scrollBy({
+          left: 400,
+          behavior: "smooth"
+        });
 
-function updateGallery(){
+      }
+    );
 
-    const itemWidth =
-    items[0].offsetWidth + 20;
+    /* =========================
+       SCROLL LEFT
+    ========================== */
 
-    track.style.transform =
-    `translateX(-${currentIndex * itemWidth}px)`;
+    leftArrow?.addEventListener(
+      "click",
+      () => {
 
-}
+        galleryTrack.scrollBy({
+          left: -400,
+          behavior: "smooth"
+        });
 
-/* MODAL */
+      }
+    );
 
-const modal =
-document.querySelector(".gallery-modal");
+    /* =========================
+       SEE ALL
+    ========================== */
 
-const modalContent =
-document.querySelector(".modal-content");
+    seeAllBtn?.addEventListener(
+      "click",
+      () => {
 
-document
-.querySelectorAll(".gallery-item")
-.forEach(item=>{
+        window.location.href =
+        "gallery.html";
 
-    item.addEventListener("click",()=>{
+      }
+    );
 
-        modalContent.innerHTML="";
+    /* =========================
+       OPEN IMAGE
+    ========================== */
 
-        if(item.classList.contains("video")){
+    viewButtons.forEach(button => {
 
-            const video =
-            item.querySelector("video")
-            .cloneNode(true);
+      button.addEventListener(
+        "click",
+        () => {
 
-            video.controls=true;
+          modalImage.src =
+          button.dataset.image;
 
-            video.autoplay=true;
+          imageModal.classList.add(
+            "active"
+          );
 
-            modalContent.appendChild(video);
+          document.body.style.overflow =
+          "hidden";
 
         }
-        else{
-
-            const img =
-            item.querySelector("img")
-            .cloneNode(true);
-
-            modalContent.appendChild(img);
-
-        }
-
-        modal.classList.add("active");
+      );
 
     });
 
+    /* =========================
+       CLOSE IMAGE
+    ========================== */
+
+    closeImageModal?.addEventListener(
+      "click",
+      () => {
+
+        imageModal.classList.remove(
+          "active"
+        );
+
+        document.body.style.overflow =
+        "auto";
+
+      }
+    );
+
+    /* =========================
+       OPEN VIDEO
+    ========================== */
+
+    playButtons.forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          const source =
+          modalVideo.querySelector(
+            "source"
+          );
+
+          source.src =
+          button.dataset.video;
+
+          modalVideo.load();
+
+          videoModal.classList.add(
+            "active"
+          );
+
+          modalVideo.play();
+
+          document.body.style.overflow =
+          "hidden";
+
+        }
+      );
+
+    });
+
+    /* =========================
+       CLOSE VIDEO
+    ========================== */
+
+    closeVideoModal?.addEventListener(
+      "click",
+      () => {
+
+        videoModal.classList.remove(
+          "active"
+        );
+
+        modalVideo.pause();
+
+        document.body.style.overflow =
+        "auto";
+
+      }
+    );
+
+    /* =========================
+       CLOSE OUTSIDE CLICK
+    ========================== */
+
+    imageModal?.addEventListener(
+      "click",
+      (e) => {
+
+        if(e.target === imageModal){
+
+          imageModal.classList.remove(
+            "active"
+          );
+
+          document.body.style.overflow =
+          "auto";
+
+        }
+
+      }
+    );
+
+    videoModal?.addEventListener(
+      "click",
+      (e) => {
+
+        if(e.target === videoModal){
+
+          videoModal.classList.remove(
+            "active"
+          );
+
+          modalVideo.pause();
+
+          document.body.style.overflow =
+          "auto";
+
+        }
+
+      }
+    );
+
+}
+
+/* =========================
+   LOAD COMPONENT
+========================= */
+
+fetch('components/gallery_section.html')
+.then(res => res.text())
+.then(data => {
+
+    document.getElementById(
+      'gallery_sec'
+    ).innerHTML = data;
+
+    initializeGallery();
+
 });
-
-document
-.querySelector(".close-modal")
-.addEventListener("click",()=>{
-
-    modal.classList.remove("active");
-
-    modalContent.innerHTML="";
-
-});
-

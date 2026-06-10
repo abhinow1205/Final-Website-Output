@@ -1,0 +1,128 @@
+/* ================================= */
+/* ========== LOGO SECTION ========= */
+/* ================================= */
+
+.logoSection {
+    width: 100%;
+    padding: 4rem 0;
+
+    background: var(--color-bg-secondary);
+
+    overflow: hidden;
+}
+
+/* ===== HEADER ===== */
+
+.logoHeader {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.logoHeader h2 {
+    font-size: var(--fs-h2);
+    color: var(--color-text-primary);
+}
+
+/* ===== SLIDER ===== */
+
+.logoSlider {
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+/* ===== TRACK ===== */
+
+.logoTrack {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    width: max-content;
+
+    animation: scrollLogos 28s linear infinite;
+}
+
+/* ===== LOGO ITEM ===== */
+
+.logoItem {
+    width: 10rem;
+    height: 5rem;
+
+    background: #fff;
+
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+
+    flex-shrink: 0;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.logoItem:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== IMAGE ===== */
+
+.logoItem img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes scrollLogos {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* ================================= */
+/* ========== RESPONSIVE =========== */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    .logoTrack {
+        gap: 2rem;
+    }
+
+    .logoItem {
+        width: 8rem;
+        height: 4.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .logoSection {
+        padding: 3rem 0;
+    }
+
+    .logoItem {
+        width: 7rem;
+        height: 4rem;
+
+        padding: 0.75rem;
+    }
+
+    .logoTrack {
+        gap: 1.5rem;
+    }
+}

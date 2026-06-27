@@ -1,0 +1,195 @@
+/* =========================
+   COMING SOON
+========================= */
+
+.coming-soon-section{
+
+    width:100%;
+
+    padding:5rem 1.5rem;
+
+    background:
+    var(--color-bg-primary);
+
+}
+
+.coming-soon-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.coming-soon-card{
+
+    background:
+    var(--color-bg-secondary);
+
+    border:
+    1px solid
+    var(--color-border);
+
+    border-radius:
+    var(--radius-lg);
+
+    box-shadow:
+    var(--shadow-md);
+
+    padding:4rem 3rem;
+
+    text-align:center;
+
+    transition:.35s ease;
+
+}
+
+.coming-soon-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    var(--shadow-lg);
+
+}
+
+/* =========================
+   ICON
+========================= */
+
+.coming-soon-icon{
+
+    width:90px;
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:2.5rem;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--color-primary),
+        var(--color-secondary)
+    );
+
+    margin-bottom:1.8rem;
+
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.coming-soon-title{
+
+    font-size:
+    var(--fs-h2);
+
+    color:
+    var(--color-text-primary);
+
+    font-weight:
+    var(--fw-bold);
+
+}
+
+.coming-soon-divider{
+
+    width:90px;
+
+    height:4px;
+
+    margin:1rem auto 2rem;
+
+    border-radius:100px;
+
+    background:
+    linear-gradient(
+        90deg,
+        var(--color-primary),
+        var(--color-secondary)
+    );
+
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.coming-soon-subtitle{
+
+    font-size:
+    1.5rem;
+
+    color:
+    var(--color-primary);
+
+    margin-bottom:1rem;
+
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.coming-soon-text{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:
+    var(--color-text-secondary);
+
+    line-height:1.8;
+
+    font-size:
+    var(--fs-body);
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .coming-soon-card{
+
+        padding:3rem 2rem;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .coming-soon-section{
+
+        padding:3rem 1rem;
+
+    }
+
+    .coming-soon-card{
+
+        padding:2.5rem 1.5rem;
+
+    }
+
+    .coming-soon-icon{
+
+        width:70px;
+        height:70px;
+
+        font-size:2rem;
+
+    }
+
+}

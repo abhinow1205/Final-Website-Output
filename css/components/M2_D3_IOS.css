@@ -1,0 +1,245 @@
+.documentLibrary{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+}
+
+.libraryHeader{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.libraryHeader h2{
+
+    font-size:2.2rem;
+
+    margin-bottom:12px;
+
+}
+
+.libraryHeader p{
+
+    color:#777;
+
+    margin-bottom:25px;
+
+}
+
+#documentSearch{
+
+    width:100%;
+
+    max-width:500px;
+
+    padding:14px 20px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    font-size:16px;
+
+}
+
+/* SECTION */
+
+.docSection{
+
+    margin-top:25px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    background:#fff;
+
+}
+
+.docHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+
+    cursor:pointer;
+
+    background:#f7f8fc;
+
+    transition:.3s;
+
+}
+
+.docHeader:hover{
+
+    background:#eef2ff;
+
+}
+
+.docTitle{
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+.docCount{
+
+    color:#666;
+
+    margin-top:6px;
+
+    font-size:14px;
+
+}
+
+.arrow{
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.docSection.active .arrow{
+
+    transform:rotate(180deg);
+
+}
+
+/* BODY */
+
+.docBody{
+
+    display:none;
+
+}
+
+.docSection.active .docBody{
+
+    display:block;
+
+}
+
+/* CARD */
+
+.documentItem{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 20px;
+
+    border-top:1px solid #eee;
+
+}
+
+.documentLeft{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+}
+
+.pdfIcon{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:10px;
+
+    background:#e53935;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+}
+
+.documentTitle{
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.documentMeta{
+
+    margin-top:6px;
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+.downloadBtn{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.downloadBtn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.documentItem{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:18px;
+
+}
+
+.downloadBtn{
+
+width:100%;
+
+}
+
+}

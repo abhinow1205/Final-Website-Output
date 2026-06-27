@@ -70,7 +70,7 @@ const translations = {
 function changeLanguage(lang) {
 
     // Save selected language
-    localStorage.setItem("language", lang);
+    sessionStorage.setItem("language", lang);
 
     const navText =
     document.querySelector(
@@ -155,7 +155,7 @@ document.addEventListener(
     () => {
 
         const savedLanguage =
-        localStorage.getItem("language")
+        sessionStorage.getItem("language")
         || "en";
 
         changeLanguage(savedLanguage);

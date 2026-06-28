@@ -1,9 +1,9 @@
-fetch("components/M2_D3_IOS.html")
+fetch("components/academics_courses.html")
   .then((res) => res.text())
   .then((data) => {
 
     // Insert HTML into page
-    document.getElementById("directorate_IOS").innerHTML = data;
+    document.getElementById("aca_courses").innerHTML = data;
 
     // ===============================
     // DOCUMENT DATA

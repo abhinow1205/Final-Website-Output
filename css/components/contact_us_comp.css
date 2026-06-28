@@ -1,0 +1,193 @@
+/*=================================
+        CONTACT PAGE
+==================================*/
+
+.contactSection{
+
+    padding:80px 20px;
+
+    background:var(--color-bg-primary);
+
+}
+
+.contactContainer{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.contactHeader{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.contactHeader h1{
+
+    font-size:var(--fs-h2);
+
+    color:var(--color-text-primary);
+
+    margin-bottom:15px;
+
+}
+
+.contactHeader p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--color-text-secondary);
+
+    line-height:1.8;
+
+}
+
+.contactGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+.contactCard{
+
+    background:var(--color-bg-secondary);
+
+    border:1px solid var(--color-border);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.3s;
+
+}
+
+.contactCard:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--color-primary);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.contactIcon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    background:rgba(76,110,245,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.contactCard h2{
+
+    color:var(--color-text-primary);
+
+    margin-bottom:25px;
+
+    line-height:1.4;
+
+}
+
+.contactItem{
+
+    margin-bottom:25px;
+
+}
+
+.contactItem strong{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--color-primary);
+
+}
+
+.contactItem p{
+
+    color:var(--color-text-secondary);
+
+    line-height:1.8;
+
+}
+
+.contactItem a{
+
+    color:var(--color-text-primary);
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.contactItem a:hover{
+
+    color:var(--color-primary);
+
+}
+
+@media(max-width:900px){
+
+.contactGrid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.contactCard{
+
+padding:25px;
+
+}
+
+.contactIcon{
+
+width:60px;
+
+height:60px;
+
+font-size:28px;
+
+}
+
+.contactHeader{
+
+margin-bottom:40px;
+
+}
+
+}

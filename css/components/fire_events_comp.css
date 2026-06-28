@@ -1,0 +1,213 @@
+/*=================================
+        NEWS & EVENTS
+==================================*/
+
+.newsSection{
+
+    padding:70px 20px;
+
+    background:var(--color-bg-primary);
+
+}
+
+.newsContainer{
+
+    max-width:1050px;
+
+    margin:auto;
+
+}
+
+.newsHeader{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.newsHeader h1{
+
+    font-size:var(--fs-h2);
+
+    color:var(--color-text-primary);
+
+    margin-bottom:15px;
+
+}
+
+.newsHeader p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--color-text-secondary);
+
+    line-height:1.8;
+
+}
+
+.newsList{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.newsCard{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    padding:24px;
+
+    border-radius:16px;
+
+    background:var(--color-bg-secondary);
+
+    border:1px solid var(--color-border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.3s;
+
+}
+
+.newsCard:hover{
+
+    transform:translateY(-4px);
+
+    border-color:var(--color-primary);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.newsIcon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:14px;
+
+    background:rgba(76,110,245,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    flex-shrink:0;
+
+}
+
+.newsContent{
+
+    flex:1;
+
+}
+
+.newsBadge{
+
+    display:inline-block;
+
+    margin-bottom:10px;
+
+    padding:5px 14px;
+
+    border-radius:50px;
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+}
+
+.newsContent h3{
+
+    color:var(--color-text-primary);
+
+    margin-bottom:10px;
+
+    font-size:1.1rem;
+
+}
+
+.newsContent p{
+
+    color:var(--color-text-secondary);
+
+}
+
+.newsBtn{
+
+    padding:12px 24px;
+
+    border-radius:8px;
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    white-space:nowrap;
+
+}
+
+.newsBtn:hover{
+
+    background:var(--color-secondary);
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.newsCard{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.newsBtn{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.newsIcon{
+
+width:55px;
+
+height:55px;
+
+font-size:24px;
+
+}
+
+}

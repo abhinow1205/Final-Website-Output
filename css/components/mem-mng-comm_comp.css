@@ -1,0 +1,221 @@
+/* ===========================
+   MANAGING COMMITTEE
+=========================== */
+
+.committeeSection{
+
+    padding:70px 20px;
+
+    background:var(--color-bg-primary);
+
+}
+
+.committeeContainer{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.committeeCard{
+
+    background:var(--color-bg-secondary);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:1px solid var(--color-border);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/* HEADER */
+
+.committeeHeader{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+    padding:40px;
+
+    border-bottom:1px solid var(--color-border);
+
+}
+
+.committeeLogo{
+
+    flex-shrink:0;
+
+}
+
+.committeeLogo img{
+
+    width:140px;
+
+    height:140px;
+
+    object-fit:contain;
+
+}
+
+.committeeHeading{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.committeeHeading h2{
+
+    font-size:2rem;
+
+    color:var(--color-text-primary);
+
+    margin-bottom:15px;
+
+}
+
+.committeeHeading h3{
+
+    font-size:1.35rem;
+
+    color:var(--color-primary);
+
+    margin-bottom:10px;
+
+}
+
+.committeeHeading p{
+
+    color:var(--color-text-secondary);
+
+    font-size:1rem;
+
+}
+
+/* TABLE */
+
+.committeeTableWrapper{
+
+    overflow-x:auto;
+
+}
+
+.committeeTable{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.committeeTable thead{
+
+    background:var(--color-primary);
+
+}
+
+.committeeTable th{
+
+    padding:18px;
+
+    color:#fff;
+
+    text-align:left;
+
+    font-size:1rem;
+
+}
+
+.committeeTable td{
+
+    padding:22px 18px;
+
+    color:var(--color-text-primary);
+
+    border-bottom:1px solid var(--color-border);
+
+    vertical-align:top;
+
+    line-height:1.8;
+
+}
+
+.committeeTable tbody tr:nth-child(even){
+
+    background:rgba(0,0,0,.03);
+
+}
+
+.committeeTable tbody tr:hover{
+
+    background:rgba(0,123,255,.08);
+
+}
+
+.committeeTable td:first-child{
+
+    font-weight:700;
+
+    width:90px;
+
+}
+
+.committeeTable td:nth-child(2){
+
+    font-weight:600;
+
+    width:320px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.committeeHeader{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:25px;
+
+padding:30px 20px;
+
+}
+
+.committeeLogo img{
+
+width:100px;
+
+height:100px;
+
+}
+
+.committeeHeading h2{
+
+font-size:1.45rem;
+
+}
+
+.committeeHeading h3{
+
+font-size:1.1rem;
+
+}
+
+.committeeTable{
+
+min-width:700px;
+
+}
+
+}

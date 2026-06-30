@@ -1,0 +1,214 @@
+.documents-section{
+
+    padding:5rem 5%;
+
+    background:var(--color-bg-primary);
+
+}
+
+.documents-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.documents-header{
+
+    text-align:center;
+
+    margin-bottom:3rem;
+
+}
+
+.documents-header h2{
+
+    font-size:var(--fs-h2);
+
+    color:var(--color-text-primary);
+
+}
+
+.documents-header p{
+
+    margin-top:1rem;
+
+    color:var(--color-text-secondary);
+
+}
+
+/* Toolbar */
+
+.documents-toolbar{
+
+    display:flex;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+    margin-bottom:2rem;
+
+}
+
+.documents-toolbar input,
+.documents-toolbar select{
+
+    padding:12px 18px;
+
+    border:1px solid var(--color-border);
+
+    border-radius:10px;
+
+    background:var(--color-bg-secondary);
+
+    color:var(--color-text-primary);
+
+    flex:1;
+
+    min-width:220px;
+
+}
+
+/* Card */
+
+.document-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 26px;
+
+    margin-bottom:16px;
+
+    background:var(--color-bg-secondary);
+
+    border:1px solid var(--color-border);
+
+    border-radius:14px;
+
+    transition:.3s;
+
+}
+
+.document-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.document-left{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+}
+
+.document-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary));
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    font-size:26px;
+
+}
+
+.document-title{
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    color:var(--color-text-primary);
+
+}
+
+.document-meta{
+
+    margin-top:8px;
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    color:var(--color-text-secondary);
+
+    font-size:.9rem;
+
+}
+
+.download-btn{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary));
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.download-btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+@media(max-width:768px){
+
+.document-card{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+.download-btn{
+
+width:100%;
+
+}
+
+}

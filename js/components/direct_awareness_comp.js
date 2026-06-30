@@ -14,11 +14,11 @@ title:"Fire Extinguisher Awareness Presentation",
 
 date:"30 Nov 2020",
 
-size:"1383 KB",
+size:"1 MB",
 
 format:"PPSX",
 
-file:"pdfs/fire-awareness.ppsx"
+file:"../../assets/docs/awareness/Fire Extinguisher.ppsx"
 
 }
 

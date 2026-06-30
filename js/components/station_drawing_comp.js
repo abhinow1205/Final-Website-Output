@@ -13,35 +13,46 @@ fetch("components/station_drawing_comp.html")
 
       {
         id: 1,
-        title: "Maharashtra Agni Suraksha Abhiyan 2009",
+        title: "TYPE I Fire Station Model",
         category: "Schemes",
         date: "30 Nov 2020",
-        size: "397 KB",
+        size: "231 KB",
         format: "PDF",
         language: "Marathi",
-        file: "assets/logos/Azaadi Logo.png"
+        file: "../../assets/docs/Fire Station Drawing/TYPE I Fire Station Model.pdf"
       },
 
       {
         id: 2,
-        title: "DPR Maharashtra Agni Suraksha Abhiyan",
+        title: "TYPE II Fire Station Model",
         category: "Schemes",
         date: "30 Nov 2020",
-        size: "52 KB",
+        size: "204 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/Fire Station Drawing/TYPE II Fire Station Model.pdf"
       },
 
       {
         id: 3,
-        title: "Funds For Phase I",
+        title: "TYPE III Fire Station Model",
         category: "Finance",
-        date: "15 Feb 2022",
-        size: "356 KB",
+        date: "30 Nov 2020",
+        size: "184 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/Fire Station Drawing/TYPE III Fire Station Model.pdf"
+      },
+
+      {
+        id: 4,
+        title: "TYPE IV Fire Station Model",
+        category: "Finance",
+        date: "30 Nov 2020",
+        size: "179 KB",
+        format: "PDF",
+        language: "English",
+        file: "../../assets/docs/Fire Station Drawing/TYPE IV Fire Station Model.pdf"
       }
 
     ];

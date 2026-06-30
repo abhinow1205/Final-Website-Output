@@ -13,7 +13,7 @@ fetch("components/SFAC_comp.html")
 
       {
         id: 1,
-        title: "Maharashtra Agni Suraksha Abhiyan 2009",
+        title: "SFAC-39th Meeting Minutes",
         category: "Schemes",
         date: "30 Nov 2020",
         size: "397 KB",
@@ -24,7 +24,7 @@ fetch("components/SFAC_comp.html")
 
       {
         id: 2,
-        title: "DPR Maharashtra Agni Suraksha Abhiyan",
+        title: "SFAC-38th Meeting Minutes",
         category: "Schemes",
         date: "30 Nov 2020",
         size: "52 KB",
@@ -35,7 +35,62 @@ fetch("components/SFAC_comp.html")
 
       {
         id: 3,
-        title: "Funds For Phase I",
+        title: "SFAC-37th Meeting Minutes",
+        category: "Finance",
+        date: "15 Feb 2022",
+        size: "356 KB",
+        format: "PDF",
+        language: "English",
+        file: "#"
+      },
+
+      {
+        id: 4,
+        title: "SFAC-36th Meeting Minutes",
+        category: "Finance",
+        date: "15 Feb 2022",
+        size: "356 KB",
+        format: "PDF",
+        language: "English",
+        file: "#"
+      },
+
+      {
+        id: 5,
+        title: "SFAC-35th Meeting Minutes",
+        category: "Finance",
+        date: "15 Feb 2022",
+        size: "356 KB",
+        format: "PDF",
+        language: "English",
+        file: "#"
+      },
+
+      {
+        id: 6,
+        title: "SFAC-34th Meeting Minutes",
+        category: "Finance",
+        date: "15 Feb 2022",
+        size: "356 KB",
+        format: "PDF",
+        language: "English",
+        file: "#"
+      },
+
+      {
+        id: 7,
+        title: "SFAC-33th Meeting Minutes",
+        category: "Finance",
+        date: "15 Feb 2022",
+        size: "356 KB",
+        format: "PDF",
+        language: "English",
+        file: "#"
+      },
+
+      {
+        id: 8,
+        title: "SFAC-32th Meeting Minutes",
         category: "Finance",
         date: "15 Feb 2022",
         size: "356 KB",

@@ -12,16 +12,16 @@ section:"scheme",
 date:"2020-11-30",
 size:"397 KB",
 language:"Marathi",
-file:"pdfs/sample1.pdf"
+file:"../../assets/docs/ios/Maharashtra Agni Suraksha Abhiyan 2009 (Marathi).pdf"
 },
 
 {
-title:"13th Finance Commission Distribution of Funds",
+title:"13th Finance Commission-Distribution of Funds",
 section:"dpr",
 date:"2020-11-30",
 size:"603 KB",
-language:"English",
-file:"pdfs/sample2.pdf"
+language:"Marathi",
+file:"../../assets/docs/ios/13th Finance Commission – Distribution of Funds.pdf"
 },
 
 {
@@ -29,17 +29,35 @@ title:"DPR Maharashtra Agni Suraksha Abhiyan",
 section:"dpr",
 date:"2020-11-30",
 size:"52 KB",
-language:"English",
-file:"pdfs/sample3.pdf"
+language:"Marathi",
+file:"../../assets/docs/ios/DPR Maharashtra Agni Suraksha Abhiyan.pdf"
 },
 
 {
 title:"Funds For Phase I",
 section:"dpr",
-date:"2022-02-15",
+date:"2020-11-30",
 size:"356 KB",
+language:"Marathi",
+file:"../../assets/docs/ios/Funds for Phase I.pdf"
+},
+
+{
+title:"Survey of Fire Services Form",
+section:"dpr",
+date:"2020-11-30",
+size:"65 KB",
 language:"English",
-file:"pdfs/sample4.pdf"
+file:"../../assets/docs/ios/Survey of Fire Services Form (English).pdf"
+},
+
+{
+title:"Survey of Fire Services Form",
+section:"dpr",
+date:"2020-11-30",
+size:"63 KB",
+language:"Marathi",
+file:"../../assets/docs/ios/Survey of Fire Services Form (Marathi).pdf"
 }
 
 ];

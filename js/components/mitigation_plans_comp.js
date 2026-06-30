@@ -7,39 +7,93 @@ document.getElementById("mitigation-plans-comp").innerHTML = data;
 const documents=[
 
 {
-title:"Maharashtra Agni Suraksha Abhiyan 2009",
+title:"Govt. Notification for Mitigation",
 section:"scheme",
 date:"2020-11-30",
-size:"397 KB",
+size:"60 KB",
+language:"English",
+file:"../../assets/docs/mitigation-plans/Govt. Notification for Mitigation.pdf"
+},
+
+{
+title:"Fire Hazard Mitigation Plan - Model Plan Navi Mumbai",
+section:"scheme",
+date:"2020-11-30",
+size:"3 MB",
+language:"English",
+file:"../../assets/docs/mitigation-plans/Fire Hazard Mitigation Plan - Model Plan Navi Mumbai.pdf"
+},
+
+{
+title:"Fire Hazards Mitigation Plan Check List 2022",
+section:"scheme",
+date:"2022-04-14",
+size:"265 KB",
+language:"English",
+file:"../../assets/docs/mitigation-plans/Fire Hazards Mitigation Plan Check List 2022.pdf"
+},
+
+{
+title:"Kalyan",
+section:"dpr",
+date:"2020-11-30",
+size:"13 MB",
 language:"Marathi",
-file:"pdfs/sample1.pdf"
+file:"../../assets/docs/mitigation-plans/Kalyan.pdf"
 },
 
 {
-title:"13th Finance Commission Distribution of Funds",
+title:"Mumbai",
 section:"dpr",
 date:"2020-11-30",
-size:"603 KB",
+size:"2 MB",
 language:"English",
-file:"pdfs/sample2.pdf"
+file:"../../assets/docs/mitigation-plans/Mumbai.pdf"
 },
 
 {
-title:"DPR Maharashtra Agni Suraksha Abhiyan",
+title:"Nagpur",
 section:"dpr",
 date:"2020-11-30",
-size:"52 KB",
-language:"English",
-file:"pdfs/sample3.pdf"
+size:"2 MB",
+language:"Marathi",
+file:"../../assets/docs/mitigation-plans/Nagpur.pdf"
 },
 
 {
-title:"Funds For Phase I",
+title:"Nashik",
 section:"dpr",
-date:"2022-02-15",
-size:"356 KB",
+date:"2020-11-30",
+size:"1 MB",
 language:"English",
-file:"pdfs/sample4.pdf"
+file:"../../assets/docs/mitigation-plans/Nashik.pdf"
+},
+
+{
+title:"Pimpri-Chinchwad",
+section:"dpr",
+date:"2020-11-30",
+size:"21 MB",
+language:"English",
+file:"../../assets/docs/mitigation-plans/Pimpri-Chinchwad.pdf"
+},
+
+{
+title:"Pune",
+section:"dpr",
+date:"2020-11-30",
+size:"947 KB",
+language:"English",
+file:"../../assets/docs/mitigation-plans/Pune.pdf"
+},
+
+{
+title:"Thane",
+section:"dpr",
+date:"2020-11-30",
+size:"3 MB",
+language:"English",
+file:"../../assets/docs/mitigation-plans/Thane.pdf"
 }
 
 ];

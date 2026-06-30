@@ -4,53 +4,180 @@ fetch("components/fire_act_comp.html")
 
 document.getElementById("fire-acts-comp").innerHTML = data;
 
+
+/*=========================================
+DOCUMENT DATA
+=========================================*/
+
 const documents=[
 
 {
-title:"Maharashtra Agni Suraksha Abhiyan 2009",
+
+title:"English",
+
 section:"scheme",
+
 date:"2020-11-30",
-size:"397 KB",
+
+size:"1.5 MB",
+
+language:"English",
+
+file:"../../assets/docs/fire-acts/Table 1/English.pdf"
+
+},
+
+{
+
+title:"Maharashtra Fire Prevention & Life Safety Measures Act, 2006",
+
+section:"scheme",
+
+date:"2026-03-23",
+
+size:"881 KB",
+
+language:"English",
+
+file:"../../assets/docs/fire-acts/Table 1/Maharashtra Fire Prevention and Life Safety Measures Act, 2006.pdf"
+
+},
+
+{
+
+title:"Marathi",
+
+section:"scheme",
+
+date:"2020-11-30",
+
+size:"689 KB",
+
 language:"Marathi",
-file:"pdfs/sample1.pdf"
+
+file:"../../assets/docs/fire-acts/Table 1/Marathi.pdf"
+
 },
 
 {
-title:"13th Finance Commission Distribution of Funds",
+
+title:"English",
+
 section:"dpr",
+
 date:"2020-11-30",
-size:"603 KB",
+
+size:"1.3 MB",
+
 language:"English",
-file:"pdfs/sample2.pdf"
+
+file:"../../assets/docs/fire-acts/Table 2/English.pdf"
+
 },
 
 {
-title:"DPR Maharashtra Agni Suraksha Abhiyan",
+
+title:"Marathi",
+
 section:"dpr",
+
 date:"2020-11-30",
-size:"52 KB",
-language:"English",
-file:"pdfs/sample3.pdf"
+
+size:"1.2 MB",
+
+language:"Marathi",
+
+file:"../../assets/docs/fire-acts/Table 2/Marathi.pdf"
+
 },
 
 {
-title:"Funds For Phase I",
-section:"dpr",
-date:"2022-02-15",
-size:"356 KB",
+
+title:"English",
+
+section:"rules",
+
+date:"2023-05-31",
+
+size:"3.1 MB",
+
 language:"English",
-file:"pdfs/sample4.pdf"
+
+file:"../../assets/docs/fire-acts/Table 3/English.pdf"
+
+},
+
+{
+
+title:"Marathi",
+
+section:"rules",
+
+date:"2023-05-31",
+
+size:"288 KB",
+
+language:"Marathi",
+
+file:"../../assets/docs/fire-acts/Table 3/Marathi.pdf"
+
+},
+
+{
+
+title:"Act to Rules (Amended)",
+
+section:"nbc",
+
+date:"2025-06-22",
+
+size:"576 KB",
+
+language:"English",
+
+file:"../../assets/docs/fire-acts/Table 4/Act to Rules (Amended) English.pdf"
+
+},
+
+{
+
+title:"Act to Rules (Amended)",
+
+section:"nbc",
+
+date:"2025-06-22",
+
+size:"576 KB",
+
+language:"Marathi",
+
+file:"../../assets/docs/fire-acts/Table 4/Act to Rules (Amended) Marathi.pdf"
+
 }
 
 ];
+
+
+/*=========================================
+GET ELEMENTS
+=========================================*/
 
 const schemeContainer=document.getElementById("schemeDocuments");
 
 const dprContainer=document.getElementById("dprDocuments");
 
+const rulesContainer=document.getElementById("rulesDocuments");
+
+const nbcContainer=document.getElementById("nbcDocuments");
+
 const search=document.getElementById("searchDocuments");
 
 const sort=document.getElementById("sortDocuments");
+
+
+/*=========================================
+CARD
+=========================================*/
 
 function card(doc){
 
@@ -90,7 +217,9 @@ ${doc.title}
 
 </div>
 
-<a href="${doc.file}" target="_blank">
+<a
+href="${doc.file}"
+target="_blank">
 
 <button class="download-btn">
 
@@ -106,13 +235,22 @@ Download
 
 }
 
+
+/*=========================================
+RENDER
+=========================================*/
+
 function render(){
 
 let data=[...documents];
 
 const text=search.value.toLowerCase();
 
-data=data.filter(d=>d.title.toLowerCase().includes(text));
+data=data.filter(doc=>
+
+doc.title.toLowerCase().includes(text)
+
+);
 
 data.sort((a,b)=>{
 
@@ -124,21 +262,43 @@ return sort.value==="latest"
 
 });
 
+
 schemeContainer.innerHTML="";
 
 dprContainer.innerHTML="";
 
+rulesContainer.innerHTML="";
+
+nbcContainer.innerHTML="";
+
+
 data.forEach(doc=>{
 
-if(doc.section==="scheme"){
+switch(doc.section){
+
+case "scheme":
 
 schemeContainer.innerHTML+=card(doc);
 
-}
+break;
 
-else{
+case "dpr":
 
 dprContainer.innerHTML+=card(doc);
+
+break;
+
+case "rules":
+
+rulesContainer.innerHTML+=card(doc);
+
+break;
+
+case "nbc":
+
+nbcContainer.innerHTML+=card(doc);
+
+break;
 
 }
 
@@ -146,9 +306,31 @@ dprContainer.innerHTML+=card(doc);
 
 }
 
-search.addEventListener("input",render);
 
-sort.addEventListener("change",render);
+/*=========================================
+EVENTS
+=========================================*/
+
+search.addEventListener(
+
+"input",
+
+render
+
+);
+
+sort.addEventListener(
+
+"change",
+
+render
+
+);
+
+
+/*=========================================
+INITIAL LOAD
+=========================================*/
 
 render();
 

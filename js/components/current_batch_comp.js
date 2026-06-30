@@ -13,35 +13,68 @@ fetch("components/current_batch_comp.html")
 
       {
         id: 1,
-        title: "Maharashtra Agni Suraksha Abhiyan 2009",
+        title: "2nd list of fireman batch jan 2020",
         category: "Schemes",
-        date: "30 Nov 2020",
-        size: "397 KB",
+        date: "30 Dec 2021",
+        size: "6.1 MB",
         format: "PDF",
         language: "Marathi",
-        file: "assets/logos/Azaadi Logo.png"
+        file: "../../assets/docs/current-batch/2nd list of fireman batch jan 2020.pdf"
       },
 
       {
         id: 2,
-        title: "DPR Maharashtra Agni Suraksha Abhiyan",
+        title: "Instruction to Female Candidate Fireman Jan-June 2022 batch",
         category: "Schemes",
-        date: "30 Nov 2020",
-        size: "52 KB",
+        date: "16 Nov 2021",
+        size: "5.2 MB",
         format: "PDF",
-        language: "English",
-        file: "#"
+        language: "Marathi",
+        file: "../../assets/docs/current-batch/Instruction to Female Candidate Fireman Jan-June 2022 batch.pdf"
       },
 
       {
         id: 3,
-        title: "Funds For Phase I",
+        title: "Instruction to Male Candidate Fireman Jan-June 2022 batch",
         category: "Finance",
-        date: "15 Feb 2022",
-        size: "356 KB",
+        date: "16 Nov 2021",
+        size: "21.5 MB",
+        format: "PDF",
+        language: "Marathi",
+        file: "../../assets/docs/current-batch/Instruction to Male Candidate Fireman Jan-June 2022 batch.pdf"
+      },
+
+      {
+        id: 4,
+        title: "JAN-16 FTC Batch",
+        category: "Finance",
+        date: "30 Nov 2020",
+        size: "121 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/current-batch/JAN-16 FTC Batch.pdf"
+      },
+
+      {
+        id: 5,
+        title: "JAN-16 SO Batch",
+        category: "Finance",
+        date: "30 Nov 2020",
+        size: "103 KB",
+        format: "PDF",
+        language: "English",
+        file: "../../assets/docs/current-batch/JAN-16 SO Batch.pdf"
+      },
+
+      {
+        id: 6,
+        title: "JUL-16 FTC Batch",
+        category: "Finance",
+        date: "30 Nov 2020",
+        size: "76 KB",
+        format: "PDF",
+        language: "English",
+        file: "../../assets/docs/current-batch/JUL-16 FTC Batch.pdf"
       }
 
     ];

@@ -13,35 +13,46 @@ fetch("components/prospectus_comp.html")
 
       {
         id: 1,
-        title: "Maharashtra Agni Suraksha Abhiyan 2009",
+        title: "Prospectus Sponsor's Candidate",
         category: "Schemes",
         date: "30 Nov 2020",
-        size: "397 KB",
+        size: "36 KB",
         format: "PDF",
         language: "Marathi",
-        file: "assets/logos/Azaadi Logo.png"
+        file: "../../assets/docs/prospectus/Prospectus Sponsor's Candidate.pdf"
       },
 
       {
         id: 2,
-        title: "DPR Maharashtra Agni Suraksha Abhiyan",
+        title: "Prospectus of Fireman's Course (Pvt)",
         category: "Schemes",
         date: "30 Nov 2020",
-        size: "52 KB",
+        size: "23 KB",
         format: "PDF",
-        language: "English",
-        file: "#"
+        language: "Marathi",
+        file: "../../assets/docs/prospectus/Prospectus of Fireman's Course (Pvt).pdf"
       },
 
       {
         id: 3,
-        title: "Funds For Phase I",
+        title: "Prospectus of SubOfficer's Course (Pvt)",
         category: "Finance",
-        date: "15 Feb 2022",
-        size: "356 KB",
+        date: "30 Nov 2020",
+        size: "19 KB",
         format: "PDF",
-        language: "English",
-        file: "#"
+        language: "Marathi",
+        file: "../../assets/docs/prospectus/Prospectus of SubOfficer's Course (Pvt).pdf"
+      },
+
+      {
+        id: 4,
+        title: "SFTC-Prospectus of High Rise Building Course",
+        category: "Finance",
+        date: "30 Nov 2020",
+        size: "67 KB",
+        format: "PDF",
+        language: "English/Marathi",
+        file: "../../assets/docs/prospectus/SFTC-Prospectus of High Rise Building Course.pdf"
       }
 
     ];

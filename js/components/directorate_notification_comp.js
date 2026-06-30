@@ -13,35 +13,90 @@ fetch("components/directorate_notification_comp.html")
 
       {
         id: 1,
-        title: "Maharashtra Agni Suraksha Abhiyan 2009",
+        title: "Notification for the Fire (Amendment) Act, 2023",
         category: "Schemes",
-        date: "30 Nov 2020",
-        size: "397 KB",
+        date: "31 May 2023",
+        size: "240 KB",
         format: "PDF",
-        language: "Marathi",
-        file: "assets/logos/Azaadi Logo.png"
+        language: "Marathi/English",
+        file: "../../assets/docs/notifications/Notification for the Fire (Amendment) Act, 2023.pdf"
       },
 
       {
         id: 2,
-        title: "DPR Maharashtra Agni Suraksha Abhiyan",
+        title: "Notification-UDD-Amendment in Fire Act-Increase in height of Hopital Buildings-06.04.2015",
         category: "Schemes",
         date: "30 Nov 2020",
-        size: "52 KB",
+        size: "102 KB",
         format: "PDF",
-        language: "English",
-        file: "#"
+        language: "Marathi/English",
+        file: "../../assets/docs/notifications/Notification-UDD-Amendment in Fire Act-Increase in height of Hopital Buildings-06.042015.pdf"
       },
 
       {
         id: 3,
-        title: "Funds For Phase I",
+        title: "Notification-UDD-Appelate Authority under Act & Rules-30.4.2011",
         category: "Finance",
-        date: "15 Feb 2022",
-        size: "356 KB",
+        date: "30 Nov 2020",
+        size: "181 KB",
+        format: "PDF",
+        language: "Marathi/English",
+        file: "../../assets/docs/notifications/Notification-UDD-Appelate Authority under Act & Rules-30.4.2011.pdf"
+      },
+
+      {
+        id: 4,
+        title: "Notification-UDD-Appointment of date for Fire Act-English-6.12.2008",
+        category: "Finance",
+        date: "30 Nov 2020",
+        size: "1.5 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/notifications/Notification-UDD-Appointment of date for  Fire Act-English-6.12.2008.pdf"
+      },
+
+      {
+        id: 5,
+        title: "Notification-UDD-Appointment of date for Fire Act-English-Marathi-07.05.2010",
+        category: "Finance",
+        date: "30 Nov 2020",
+        size: "1.3 MB",
+        format: "PDF",
+        language: "Marathi/English",
+        file: "../../assets/docs/notifications/Notification-UDD-Appointment of date for  Fire Act-English-Marathi-07.05.2010.pdf"
+      },
+
+      {
+        id: 6,
+        title: "Notification-UDD-Appointment of date for Fire Act (Marathi)-6.12.2008",
+        category: "Finance",
+        date: "30 Nov 2020",
+        size: "1.3 MB",
+        format: "PDF",
+        language: "Marathi",
+        file: "../../assets/docs/notifications/Notification-UDD-Appointment of date for Fire Act (Marathi)-6.12.2008.pdf"
+      },
+
+      {
+        id: 7,
+        title: "Notification-UDD-DMA-RR of Muncipal Councils-30.01.2017",
+        category: "Finance",
+        date: "30 Nov 2020",
+        size: "256 KB",
+        format: "PDF",
+        language: "Marathi",
+        file: "../../assets/docs/notifications/Notification-UDD-Appointment of date for Fire Act (Marathi)-6.12.2008.pdf"
+      },
+
+      {
+        id: 8,
+        title: "Notification-UDD-Fire Service Fee-03.03.2014",
+        category: "Finance",
+        date: "30 Nov 2020",
+        size: "45 KB",
+        format: "PDF",
+        language: "Marathi/English",
+        file: "../../assets/docs/notifications/Notification-UDD-Fire Service Fee-03.03.2014.pdf"
       }
 
     ];

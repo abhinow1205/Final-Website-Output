@@ -31,8 +31,8 @@ fetch('../components/hero_slider.html')
   document.getElementById('hero_slider').innerHTML = data;
 });
 
-fetch('components/gallery_fire_engines_comp.html')
-.then(res => res.text())
-.then(data => {
-  document.getElementById('gallery-fire-engines-comp').innerHTML = data;
-});
+// fetch('components/gallery_fire_engines_comp.html')
+// .then(res => res.text())
+// .then(data => {
+//   document.getElementById('gallery-fire-engines-comp').innerHTML = data;
+// });

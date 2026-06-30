@@ -1,0 +1,125 @@
+.galleryPlaceholderSection{
+
+    padding:80px 20px;
+
+    background:var(--color-bg-primary);
+
+}
+
+.galleryPlaceholderContainer{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.galleryPlaceholderCard{
+
+    background:var(--color-bg-secondary);
+
+    border:1px solid var(--color-border);
+
+    border-radius:18px;
+
+    padding:60px 40px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.galleryIcon{
+
+    font-size:65px;
+
+    margin-bottom:20px;
+
+}
+
+.galleryPlaceholderCard h1{
+
+    font-size:var(--fs-h2);
+
+    color:var(--color-text-primary);
+
+    margin-bottom:20px;
+
+}
+
+.galleryPlaceholderCard>p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--color-text-secondary);
+
+    line-height:1.8;
+
+}
+
+.uploadSoonBox{
+
+    margin-top:45px;
+
+    padding:50px 25px;
+
+    border:2px dashed var(--color-border);
+
+    border-radius:16px;
+
+    background:var(--color-bg-primary);
+
+}
+
+.uploadIcon{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.uploadSoonBox h2{
+
+    color:var(--color-text-primary);
+
+    margin-bottom:15px;
+
+}
+
+.uploadSoonBox p{
+
+    color:var(--color-text-secondary);
+
+    max-width:500px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+@media(max-width:768px){
+
+.galleryPlaceholderCard{
+
+padding:40px 25px;
+
+}
+
+.galleryIcon{
+
+font-size:55px;
+
+}
+
+.uploadIcon{
+
+font-size:55px;
+
+}
+
+}

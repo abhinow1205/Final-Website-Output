@@ -1,8 +1,8 @@
-fetch("components/M2_D3_IOS.html")
+fetch("components/mitigation_plans_comp.html")
 .then(res => res.text())
 .then(data => {
 
-document.getElementById("directorate_IOS").innerHTML = data;
+document.getElementById("mitigation-plans-comp").innerHTML = data;
 
 const documents=[
 

@@ -1,8 +1,8 @@
-fetch("components/M2_D3_IOS.html")
+fetch("components/fire_act_comp.html")
 .then(res => res.text())
 .then(data => {
 
-document.getElementById("directorate_IOS").innerHTML = data;
+document.getElementById("fire-acts-comp").innerHTML = data;
 
 const documents=[
 

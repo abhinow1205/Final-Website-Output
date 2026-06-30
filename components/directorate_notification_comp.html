@@ -1,0 +1,37 @@
+<section class="documents-section">
+  <div class="documents-container">
+    <div class="documents-header">
+      <h2 data-key="documentsHeading">Notifications</h2>
+
+      <p data-key="documentsSubtitle">
+        Browse and download official documents.
+      </p>
+    </div>
+
+    <!-- FILTER BAR -->
+
+    <div class="documents-toolbar">
+      <input
+        type="text"
+        id="searchDocuments"
+        placeholder="Search documents..."
+      />
+
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+      </select>
+
+      <select id="sortDocuments">
+        <option value="latest">Latest First</option>
+
+        <option value="oldest">Oldest First</option>
+      </select>
+    </div>
+
+    <!-- DOCUMENT LIST -->
+
+    <div class="documents-list" id="documentsList">
+      <!-- Loaded dynamically -->
+    </div>
+  </div>
+</section>

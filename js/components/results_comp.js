@@ -18,8 +18,8 @@ fetch("components/results_comp.html")
         date: "02 Jan 2026",
         size: "1.4 MB",
         format: "PDF",
-        language: "Marathi",
-        file: "assets/logos/Azaadi Logo.png"
+        language: "English",
+        file: "../../assets/docs/results/2nd List Selected Candidates of Fireman Course - July 2025.pdf"
       },
 
       {
@@ -30,7 +30,7 @@ fetch("components/results_comp.html")
         size: "330 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/Allotment Letter for Sub Officer Course No.12 from July-2026-1.pdf"
       },
 
       {
@@ -41,7 +41,7 @@ fetch("components/results_comp.html")
         size: "4.5 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/FIREMAN Batch No. 159 to 166 – RESULT.pdf"
       },
 
       {
@@ -52,7 +52,7 @@ fetch("components/results_comp.html")
         size: "2.4 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/FIREMAN Batch No.167 to 175-RESULT.pdf"
       },
 
       {
@@ -63,7 +63,7 @@ fetch("components/results_comp.html")
         size: "2.6 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/FTC 189 to 197 Result.pdf"
       },
 
       {
@@ -74,7 +74,7 @@ fetch("components/results_comp.html")
         size: "3.0 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/FTC 207 to 215 Result- PDF 250920 141752.pdf"
       },
 
       {
@@ -85,7 +85,7 @@ fetch("components/results_comp.html")
         size: "2.0 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/FTC Result 100 to 118.pdf"
       },
 
       {
@@ -96,7 +96,7 @@ fetch("components/results_comp.html")
         size: "2.2 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/FTC Result 119 to 128.pdf"
       },
 
       {
@@ -107,7 +107,7 @@ fetch("components/results_comp.html")
         size: "2.2 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/Fireman Result 198 to 206.pdf"
       },
 
       {
@@ -118,7 +118,7 @@ fetch("components/results_comp.html")
         size: "1.7 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/Fireman Result batch No. 183 to 188.pdf"
       },
 
       {
@@ -129,7 +129,7 @@ fetch("components/results_comp.html")
         size: "3.8 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/2nd List Selected Candidates of Fireman Course - July 2025.pdf"
       },
 
       {
@@ -140,7 +140,7 @@ fetch("components/results_comp.html")
         size: "368 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/List of Eligible Candidates & Waiting List for Fireman 260102 164601.pdf"
       },
 
       {
@@ -151,7 +151,7 @@ fetch("components/results_comp.html")
         size: "400 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/List of Eligible Candidates & Waiting List for Sub 260102 182615.pdf"
       },
 
       {
@@ -162,7 +162,7 @@ fetch("components/results_comp.html")
         size: "194 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/List of Non Eligible Candidates for Sub Officer 260102 182634.pdf"
       },
 
       {
@@ -173,7 +173,7 @@ fetch("components/results_comp.html")
         size: "194 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/List of Non Eligible Candidates for Sub Officer 260102 182634-1.pdf"
       },
 
       {
@@ -184,7 +184,7 @@ fetch("components/results_comp.html")
         size: "247 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/List of Non Eligible Candidates of Fireman 260102 164530-1.pdf"
       },
 
       {
@@ -195,7 +195,7 @@ fetch("components/results_comp.html")
         size: "247 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/List of Non Eligible Candidates of Fireman 260102 164530.pdf"
       },
 
       {
@@ -205,8 +205,8 @@ fetch("components/results_comp.html")
         date: "03 Jun 2026",
         size: "3.5 MB",
         format: "PDF",
-        language: "English",
-        file: "#"
+        language: "Marathi",
+        file: "../../assets/docs/results/List of Selected Candidates for Fireman's Course-January-2026 Batch.pdf"
       },
 
       {
@@ -217,7 +217,7 @@ fetch("components/results_comp.html")
         size: "725 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/List of Selected Candidates for Sub Officer's Course- July -2025.pdf"
       },
 
       {
@@ -228,7 +228,7 @@ fetch("components/results_comp.html")
         size: "369 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/List of Selected Candidates for Sub Officer's Course-July-2026 Batch-1.pdf"
       },
 
       {
@@ -239,7 +239,7 @@ fetch("components/results_comp.html")
         size: "311 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/Sub Officer Result.pdf"
       },
 
       {
@@ -250,7 +250,7 @@ fetch("components/results_comp.html")
         size: "1.8 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/Fireman Result.pdf"
       },
 
       {
@@ -261,7 +261,7 @@ fetch("components/results_comp.html")
         size: "291 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/Sub Officer and Fire Prevention Officer Result.pdf"
       },
 
       {
@@ -272,7 +272,7 @@ fetch("components/results_comp.html")
         size: "233 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/Sub Officer Result.pdf"
       },
 
       {
@@ -283,7 +283,7 @@ fetch("components/results_comp.html")
         size: "577 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/All Competitions Result.pdf"
       },
 
       {
@@ -294,7 +294,7 @@ fetch("components/results_comp.html")
         size: "2.9 MB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/FTC-216 to FTC-225-1.pdf"
       },
 
       {
@@ -304,8 +304,8 @@ fetch("components/results_comp.html")
         date: "03 Jun 2026",
         size: "1.7 MB",
         format: "PDF",
-        language: "English",
-        file: "#"
+        language: "Marathi",
+        file: "../../assets/docs/results/Second List of Selected Candidates for Fireman's Course -January-2026 Batch-1.pdf"
       },
 
       {
@@ -316,7 +316,7 @@ fetch("components/results_comp.html")
         size: "512 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/Sub Officer batch No. 08 Result.pdf"
       },
 
       {
@@ -327,7 +327,7 @@ fetch("components/results_comp.html")
         size: "699 KB",
         format: "PDF",
         language: "English",
-        file: "#"
+        file: "../../assets/docs/results/List of sub officer for July batch.pdf"
       }
 
 

@@ -2,21 +2,21 @@
    NOTIFICATION BAR
 ========================= */
 
-.notification_bar {
+.notification_bar{
 
-    width: 100%;
+    width:100%;
 
-    background:
-    var(--color-primary);
+    background:var(--color-primary);
 
-    color: white;
+    color:#fff;
 
-    display: flex;
-    align-items: center;
+    display:flex;
 
-    overflow: hidden;
+    align-items:center;
 
-    padding: 14px 0;
+    overflow:hidden;
+
+    padding:14px 0;
 
 }
 
@@ -24,70 +24,93 @@
    LEFT LABEL
 ========================= */
 
-.notification_label {
+.notification_label{
 
-    display: flex;
-    align-items: center;
+    display:flex;
 
-    flex-shrink: 0;
+    align-items:center;
 
-    padding-left: 40px;
+    flex-shrink:0;
 
-    padding-right: 24px;
+    padding-left:40px;
 
-    gap: 20px;
+    padding-right:24px;
 
-    font-weight: var(--fw-bold);
+    gap:20px;
+
+    font-weight:700;
+
+    white-space:nowrap;
 
 }
 
-/* DIVIDER */
+.divider{
 
-.divider {
+    width:1px;
 
-    width: 1px;
-    height: 24px;
+    height:24px;
 
-    background: rgba(255,255,255,0.5);
+    background:rgba(255,255,255,.5);
 
 }
 
 /* =========================
-   MARQUEE AREA
+   MARQUEE
 ========================= */
 
-.notification_marquee {
+.notification_marquee{
 
-    flex: 1;
+    flex:1;
 
-    overflow: hidden;
+    overflow:hidden;
 
-    position: relative;
-
-}
-
-/* MOVING TRACK */
-
-.notification_track {
-
-    display: flex;
-
-    gap: 80px;
-
-    white-space: nowrap;
-
-    width: max-content;
-
-    animation:
-    marquee 30s linear infinite;
+    position:relative;
 
 }
 
-/* TEXT */
+.notification_track{
 
-.notification_track span {
+    display:flex;
 
-    font-size: var(--fs-body);
+    align-items:center;
+
+    gap:80px;
+
+    width:max-content;
+
+    animation:notificationScroll 35s linear infinite;
+
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.notification_track a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    white-space:nowrap;
+
+    font-size:var(--fs-body);
+
+    transition:.25s;
+
+}
+
+.notification_track a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* Pause animation */
+
+.notification_bar:hover .notification_track{
+
+    animation-play-state:paused;
 
 }
 
@@ -95,19 +118,17 @@
    ANIMATION
 ========================= */
 
-@keyframes marquee {
+@keyframes notificationScroll{
 
-    from {
+    from{
 
-        transform:
-        translateX(100%);
+        transform:translateX(0);
 
     }
 
-    to {
+    to{
 
-        transform:
-        translateX(-100%);
+        transform:translateX(-50%);
 
     }
 
@@ -117,30 +138,30 @@
    MOBILE
 ========================= */
 
-@media (max-width: 768px) {
+@media(max-width:768px){
 
-    .notification_label {
+.notification_label{
 
-        padding-left: 20px;
+padding-left:18px;
 
-        padding-right: 16px;
+padding-right:18px;
 
-        gap: 12px;
+gap:12px;
 
-    }
-
-    .notification_track {
-
-        gap: 50px;
-
-    }
+font-size:15px;
 
 }
 
-.notification_bar:hover .notification_track {
+.notification_track{
 
-    animation-play-state: paused;
+gap:50px;
 
-    cursor: pointer;
+}
+
+.notification_track a{
+
+font-size:14px;
+
+}
 
 }

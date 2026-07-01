@@ -1,203 +1,213 @@
-async function loadHeroSlides() {
+fetch("components/hero_slider.html")
 
-    try {
+.then(res=>res.text())
 
-        const response = await fetch(
-            "http://localhost:1337/api/hero-sliders?populate=*"
-        );
+.then(data=>{
 
-        const result = await response.json();
+document.getElementById("hero_slider").innerHTML=data;
 
-        const slidesContainer =
-            document.getElementById("heroSlides");
+initHeroSlider();
 
-        const dotsContainer =
-            document.getElementById("sliderDots");
+});
 
-        slidesContainer.innerHTML = "";
-        dotsContainer.innerHTML = "";
 
-        const slidesData = result.data
-            .filter(item => item.Active)
-            .sort(
-                (a, b) =>
-                a.Display_Order -
-                b.Display_Order
-            );
 
-        slidesData.forEach((item, index) => {
+function initHeroSlider(){
 
-            const slide =
-                document.createElement("div");
+const slides=document.querySelectorAll(".heroSlide");
 
-            slide.classList.add("slide");
+const dotsContainer=document.querySelector(".heroDots");
 
-            if(index === 0) {
+const prev=document.querySelector(".heroPrev");
 
-                slide.classList.add("active");
+const next=document.querySelector(".heroNext");
 
-            }
+let current=0;
 
-            const mediaUrl =
-                "http://localhost:1337" +
-                item.Media.url;
+let interval;
 
-            if(item.Media_Type === "video") {
 
-                slide.innerHTML = `
-                    <video
-                        autoplay
-                        muted
-                        loop
-                        playsinline>
+/*==============================
+CREATE DOTS
+==============================*/
 
-                        <source
-                            src="${mediaUrl}"
-                            type="video/mp4">
+slides.forEach((slide,index)=>{
 
-                    </video>
-                `;
+const dot=document.createElement("span");
 
-            }
-            else {
+dot.className="heroDot";
 
-                slide.innerHTML = `
-                    <img
-                        src="${mediaUrl}"
-                        alt="Hero Slide">
-                `;
+if(index===0){
 
-            }
-
-            slidesContainer.appendChild(
-                slide
-            );
-
-            const dot =
-                document.createElement("span");
-
-            dot.classList.add("dot");
-
-            if(index === 0) {
-
-                dot.classList.add("active");
-
-            }
-
-            dotsContainer.appendChild(dot);
-
-        });
-
-        initializeHeroSlider();
-
-    }
-    catch(error) {
-
-        console.error(
-            "Error loading hero slides:",
-            error
-        );
-
-    }
+dot.classList.add("active");
 
 }
 
-function initializeHeroSlider() {
+dot.addEventListener("click",()=>{
 
-    const slides =
-        document.querySelectorAll(".slide");
+current=index;
 
-    const dots =
-        document.querySelectorAll(".dot");
+showSlide();
 
-    const nextBtn =
-        document.querySelector(".next");
+resetAuto();
 
-    const prevBtn =
-        document.querySelector(".prev");
+});
 
-    let currentSlide = 0;
+dotsContainer.appendChild(dot);
 
-    function showSlide(index) {
+});
 
-        slides.forEach((slide) => {
+const dots=document.querySelectorAll(".heroDot");
 
-            slide.classList.remove("active");
 
-        });
+/*==============================
+SHOW SLIDE
+==============================*/
 
-        dots.forEach((dot) => {
+function showSlide(){
 
-            dot.classList.remove("active");
+slides.forEach(slide=>slide.classList.remove("active"));
 
-        });
+dots.forEach(dot=>dot.classList.remove("active"));
 
-        slides[index].classList.add("active");
+slides[current].classList.add("active");
 
-        dots[index].classList.add("active");
-
-    }
-
-    function nextSlide() {
-
-        currentSlide++;
-
-        if(currentSlide >= slides.length) {
-
-            currentSlide = 0;
-
-        }
-
-        showSlide(currentSlide);
-
-    }
-
-    function prevSlide() {
-
-        currentSlide--;
-
-        if(currentSlide < 0) {
-
-            currentSlide =
-                slides.length - 1;
-
-        }
-
-        showSlide(currentSlide);
-
-    }
-
-    nextBtn.addEventListener(
-        "click",
-        nextSlide
-    );
-
-    prevBtn.addEventListener(
-        "click",
-        prevSlide
-    );
-
-    dots.forEach((dot, index) => {
-
-        dot.addEventListener(
-            "click",
-            () => {
-
-                currentSlide = index;
-
-                showSlide(currentSlide);
-
-            }
-        );
-
-    });
-
-    setInterval(() => {
-
-        nextSlide();
-
-    }, 5000);
+dots[current].classList.add("active");
 
 }
 
-loadHeroSlides();
+
+/*==============================
+NEXT
+==============================*/
+
+function nextSlide(){
+
+current++;
+
+if(current>=slides.length){
+
+current=0;
+
+}
+
+showSlide();
+
+}
+
+
+/*==============================
+PREVIOUS
+==============================*/
+
+function prevSlide(){
+
+current--;
+
+if(current<0){
+
+current=slides.length-1;
+
+}
+
+showSlide();
+
+}
+
+
+/*==============================
+BUTTON EVENTS
+==============================*/
+
+next.addEventListener("click",()=>{
+
+nextSlide();
+
+resetAuto();
+
+});
+
+prev.addEventListener("click",()=>{
+
+prevSlide();
+
+resetAuto();
+
+});
+
+
+/*==============================
+AUTOPLAY
+==============================*/
+
+function startAuto(){
+
+interval=setInterval(nextSlide,5000);
+
+}
+
+function resetAuto(){
+
+clearInterval(interval);
+
+startAuto();
+
+}
+
+startAuto();
+
+
+/*==============================
+PAUSE ON HOVER
+==============================*/
+
+const slider=document.querySelector(".heroSlider");
+
+slider.addEventListener("mouseenter",()=>{
+
+clearInterval(interval);
+
+});
+
+slider.addEventListener("mouseleave",()=>{
+
+startAuto();
+
+});
+
+
+/*==============================
+SWIPE SUPPORT
+==============================*/
+
+let startX=0;
+
+slider.addEventListener("touchstart",(e)=>{
+
+startX=e.changedTouches[0].clientX;
+
+});
+
+slider.addEventListener("touchend",(e)=>{
+
+let endX=e.changedTouches[0].clientX;
+
+let diff=startX-endX;
+
+if(Math.abs(diff)<50)return;
+
+if(diff>0){
+
+nextSlide();
+
+}else{
+
+prevSlide();
+
+}
+
+resetAuto();
+
+});
+
+}

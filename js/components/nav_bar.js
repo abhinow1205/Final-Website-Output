@@ -21,8 +21,6 @@ document.addEventListener(
     );
 
 }
-
-
 );
 
 fetch('../components/nav_bar.html')

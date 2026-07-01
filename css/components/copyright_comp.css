@@ -1,0 +1,127 @@
+/* ==========================================
+   POLICY PAGE
+========================================== */
+
+.policySection{
+
+    padding:70px 20px;
+
+    background:var(--color-bg-primary);
+
+}
+
+.policyContainer{
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.policyHeader{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.policyHeader h1{
+
+    font-size:var(--fs-h2);
+
+    color:var(--color-text-primary);
+
+    position:relative;
+
+    display:inline-block;
+
+    padding-bottom:18px;
+
+}
+
+.policyHeader h1::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:0;
+
+    transform:translateX(-50%);
+
+    width:90px;
+
+    height:4px;
+
+    border-radius:20px;
+
+    background:var(--color-primary);
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.policyCard{
+
+    background:var(--color-bg-secondary);
+
+    border:1px solid var(--color-border);
+
+    border-radius:16px;
+
+    padding:45px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.policyCard p{
+
+    font-size:var(--fs-body);
+
+    color:var(--color-text-secondary);
+
+    line-height:2;
+
+    text-align:justify;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.policySection{
+
+    padding:50px 16px;
+
+}
+
+.policyCard{
+
+    padding:28px;
+
+}
+
+.policyHeader h1{
+
+    font-size:2rem;
+
+}
+
+}

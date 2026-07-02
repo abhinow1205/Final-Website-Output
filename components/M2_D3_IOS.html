@@ -1,9 +1,11 @@
 <section class="documents-section">
   <div class="documents-container">
     <div class="documents-header">
-      <h1>Implementation of Schemes</h1>
+      <h1 data-key="implementationSchemes">Implementation of Schemes</h1>
 
-      <p>Browse and download official documents.</p>
+      <p data-key="documentsDescription">
+        Browse and download official documents.
+      </p>
     </div>
 
     <!-- Toolbar -->
@@ -16,16 +18,16 @@
       />
 
       <select id="sortDocuments">
-        <option value="latest">Latest First</option>
+        <option value="latest" data-key="latestFirst">Latest First</option>
 
-        <option value="oldest">Oldest First</option>
+        <option value="oldest" data-key="oldestFirst">Oldest First</option>
       </select>
     </div>
 
     <!-- First Section -->
 
     <div class="document-group">
-      <h2 class="group-title">Scheme Documents</h2>
+      <h2 class="group-title" data-key="schemeDocuments">Scheme Documents</h2>
 
       <div class="documents-list" id="schemeDocuments"></div>
     </div>
@@ -33,7 +35,9 @@
     <!-- Second Section -->
 
     <div class="document-group">
-      <h2 class="group-title">DPR Maharashtra Agni Suraksha Abhiyan</h2>
+      <h2 class="group-title" data-key="dprMaharashtraAgniSurakshaAbhiyan">
+        DPR Maharashtra Agni Suraksha Abhiyan
+      </h2>
 
       <div class="documents-list" id="dprDocuments"></div>
     </div>

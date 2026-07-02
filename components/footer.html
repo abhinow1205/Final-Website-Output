@@ -2,9 +2,11 @@
   <div class="container footer-container">
     <!-- Column 1: About -->
     <div class="footer-col">
-      <h3 class="footer-title">Maharashtra Fire & Emergency Services</h3>
+      <h3 data-key="footerTitle" class="footer-title">
+        Maharashtra Fire & Emergency Services
+      </h3>
 
-      <p class="footer-text">
+      <p data-key="footerDescription" class="footer-text">
         Serving and protecting citizens with rapid emergency response and safety
         awareness.
       </p>
@@ -12,19 +14,27 @@
 
     <!-- Column 2: Quick Links -->
     <div class="footer-col">
-      <h4 class="footer-subtitle">Quick Links</h4>
+      <h4 data-key="quickLinks" class="footer-subtitle">Quick Links</h4>
 
       <ul class="footer-links">
-        <li><a href="../about-history.html">About Us</a></li>
-        <li><a href="../services_provisional_approval.html">Services</a></li>
-        <li><a href="../directorate-notification.html">Notifications</a></li>
-        <li><a href="../contact-us.html">Contact</a></li>
+        <li><a data-key="aboutUs" href="../about-history.html">About Us</a></li>
+        <li>
+          <a data-key="services" href="../services_provisional_approval.html"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a data-key="notifications" href="../directorate-notification.html"
+            >Notifications</a
+          >
+        </li>
+        <li><a data-key="contact" href="../contact-us.html">Contact</a></li>
       </ul>
     </div>
 
     <!-- Column 3: Contact -->
     <div class="footer-col">
-      <h4 class="footer-subtitle">Contact</h4>
+      <h4 data-key="contact" class="footer-subtitle">Contact</h4>
 
       <ul class="footer-contact">
         <li>📍 Maharashtra, India</li>
@@ -35,7 +45,7 @@
 
     <!-- Column 4: Policies + Social -->
     <div class="footer-col">
-      <h4 class="footer-subtitle">Policies</h4>
+      <h4 data-key="policies" class="footer-subtitle">Policies</h4>
 
       <ul class="footer-links">
         <li>
@@ -43,6 +53,7 @@
             href="../privacy-policy.html"
             class="openModal"
             data-modal="privacyModal"
+            data-key="privacyPolicy"
           >
             Privacy Policy
           </a>
@@ -53,6 +64,7 @@
             href="../disclaimer.html"
             class="openModal"
             data-modal="disclaimerModal"
+            data-key="disclaimer"
           >
             Disclaimer
           </a>
@@ -63,6 +75,7 @@
             href="../copyright.html"
             class="openModal"
             data-modal="accessibilityModal"
+            data-key="copyright"
           >
             Copyright
           </a>
@@ -76,7 +89,7 @@
       <div class="policyModal" id="privacyModal">
         <div class="policyContent">
           <div class="modalHeader">
-            <h2>Privacy Policy</h2>
+            <h2 data-key="privacyPolicy">Privacy Policy</h2>
 
             <button class="closeModal">&times;</button>
           </div>
@@ -98,7 +111,7 @@
       <div class="policyModal" id="disclaimerModal">
         <div class="policyContent">
           <div class="modalHeader">
-            <h2>Disclaimer</h2>
+            <h2 data-key="disclaimer">Disclaimer</h2>
 
             <button class="closeModal">&times;</button>
           </div>

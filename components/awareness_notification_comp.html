@@ -4,31 +4,57 @@
 
     <div class="awarenessCard">
       <div class="cardHeading">
-        <h2>Awareness Programme</h2>
+        <h2 data-key="awarenessProgramme">Awareness Programme</h2>
       </div>
 
       <div class="awarenessContent">
         <div class="awarenessGroup">
-          <h3>🔥 Fire Prevention & Protection</h3>
+          <h3 data-key="firePreventionProtection">
+            🔥 Fire Prevention & Protection
+          </h3>
 
           <ul>
-            <li><a href="../fire-prev-and-protect.html">Malls</a></li>
-            <li><a href="../fire-prev-and-protect.html">Schools</a></li>
-            <li><a href="../fire-prev-and-protect.html">Industries</a></li>
             <li>
-              <a href="../fire-prev-and-protect.html">High Rise Residential</a>
+              <a data-key="malls" href="../fire-prev-and-protect.html">Malls</a>
+            </li>
+            <li>
+              <a data-key="schools" href="../fire-prev-and-protect.html"
+                >Schools</a
+              >
+            </li>
+            <li>
+              <a data-key="industries" href="../fire-prev-and-protect.html"
+                >Industries</a
+              >
+            </li>
+            <li>
+              <a
+                data-key="highRiseResidential"
+                href="../fire-prev-and-protect.html"
+                >High Rise Residential</a
+              >
             </li>
           </ul>
         </div>
 
         <div class="awarenessGroup">
-          <h3>📘 Do's & Don'ts</h3>
+          <h3 data-key="dosDonts">📘 Do's & Don'ts</h3>
 
           <ul>
-            <li><a href="../fire-safety.html">Fireworks</a></li>
-            <li><a href="../fire-safety.html">LPG Cylinder</a></li>
-            <li><a href="../earthquake-prev.html">Earthquakes</a></li>
-            <li><a href="../flood-prev.html">Floods</a></li>
+            <li>
+              <a data-key="fireworks" href="../fire-safety.html">Fireworks</a>
+            </li>
+            <li>
+              <a data-key="lpgCylinder" href="../fire-safety.html"
+                >LPG Cylinder</a
+              >
+            </li>
+            <li>
+              <a data-key="earthquakes" href="../earthquake-prev.html"
+                >Earthquakes</a
+              >
+            </li>
+            <li><a data-key="floods" href="../flood-prev.html">Floods</a></li>
           </ul>
         </div>
       </div>
@@ -38,15 +64,15 @@
 
     <div class="notificationCard">
       <div class="cardHeading">
-        <h2>Notifications</h2>
+        <h2 data-key="notifications">Notifications</h2>
       </div>
 
       <div class="notificationToolbar">
         <input type="text" id="notificationSearch" placeholder="Search..." />
 
         <select id="notificationSort">
-          <option value="latest">Latest</option>
-          <option value="oldest">Oldest</option>
+          <option value="latest" data-key="latest">Latest</option>
+          <option value="oldest" data-key="oldest">Oldest</option>
         </select>
       </div>
 

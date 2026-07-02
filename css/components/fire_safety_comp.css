@@ -1,0 +1,279 @@
+/*======================================
+FIRE SAFETY CONTENT
+======================================*/
+
+.fireSafetyContentSection{
+
+    padding:70px 20px;
+
+    background:var(--color-bg-primary);
+
+}
+
+.fireSafetyContentContainer{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* Header */
+
+.fireSafetyHeader{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.fireSafetyHeader h1{
+
+    font-size:var(--fs-h2);
+
+    color:var(--color-text-primary);
+
+    margin-bottom:18px;
+
+}
+
+.fireSafetyHeader h1::after{
+
+    content:"";
+
+    display:block;
+
+    width:80px;
+
+    height:4px;
+
+    margin:18px auto 0;
+
+    background:var(--color-primary);
+
+    border-radius:20px;
+
+}
+
+.fireSafetyHeader p{
+
+    color:var(--color-text-secondary);
+
+    font-size:var(--fs-body);
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/* Cards */
+
+.contentCard{
+
+    background:var(--color-bg-secondary);
+
+    border:1px solid var(--color-border);
+
+    border-radius:18px;
+
+    padding:40px;
+
+    margin-bottom:35px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.contentCard h2{
+
+    color:var(--color-primary);
+
+    margin-bottom:18px;
+
+    font-size:1.8rem;
+
+}
+
+.contentCard p{
+
+    color:var(--color-text-secondary);
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+}
+
+/* DO DONT */
+
+.tipsGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.tipsBox{
+
+    border-radius:15px;
+
+    padding:25px;
+
+}
+
+.doBox{
+
+    background:#f0fff5;
+
+    border-left:5px solid #25b864;
+
+}
+
+.dontBox{
+
+    background:#fff4f4;
+
+    border-left:5px solid #e74c3c;
+
+}
+
+.tipsBox h3{
+
+    margin-bottom:20px;
+
+}
+
+.tipsBox ul{
+
+    padding-left:20px;
+
+}
+
+.tipsBox li{
+
+    margin-bottom:12px;
+
+    line-height:1.8;
+
+}
+
+/* Lists */
+
+.iconList{
+
+    padding-left:22px;
+
+}
+
+.iconList li{
+
+    margin-bottom:15px;
+
+    line-height:1.9;
+
+}
+
+/* Emergency */
+
+.emergencyCard{
+
+    background:linear-gradient(135deg,#fff8f2,#ffffff);
+
+}
+
+.emergencyNumbers{
+
+    display:flex;
+
+    gap:30px;
+
+    margin:25px 0 35px;
+
+}
+
+.emergencyNumbers div{
+
+    flex:1;
+
+    background:white;
+
+    border:1px solid var(--color-border);
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.emergencyNumbers span{
+
+    display:block;
+
+    color:var(--color-text-secondary);
+
+    margin-bottom:8px;
+
+}
+
+.emergencyNumbers strong{
+
+    font-size:2rem;
+
+    color:var(--color-primary);
+
+}
+
+/* Rules */
+
+.rulesList{
+
+    padding-left:25px;
+
+}
+
+.rulesList li{
+
+    margin-bottom:16px;
+
+    line-height:1.8;
+
+}
+
+/*======================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:768px){
+
+.contentCard{
+
+padding:25px;
+
+}
+
+.tipsGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.emergencyNumbers{
+
+flex-direction:column;
+
+}
+
+.fireSafetyHeader{
+
+margin-bottom:40px;
+
+}
+
+}

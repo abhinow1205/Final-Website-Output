@@ -1,0 +1,147 @@
+/*=====================================
+EARTHQUAKE PREPAREDNESS
+=====================================*/
+
+.earthquakeSection{
+
+    padding:70px 20px;
+
+    background:var(--color-bg-primary);
+
+}
+
+.earthquakeContainer{
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+/* Header */
+
+.earthquakeHeader{
+
+    text-align:center;
+
+    margin-bottom:55px;
+
+}
+
+.earthquakeHeader h1{
+
+    font-size:var(--fs-h2);
+
+    color:var(--color-text-primary);
+
+    margin-bottom:15px;
+
+}
+
+.earthquakeHeader h1::after{
+
+    content:"";
+
+    display:block;
+
+    width:80px;
+
+    height:4px;
+
+    margin:18px auto 0;
+
+    border-radius:20px;
+
+    background:var(--color-primary);
+
+}
+
+.earthquakeHeader p{
+
+    font-size:var(--fs-body);
+
+    color:var(--color-text-secondary);
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/* Cards */
+
+.earthquakeCard{
+
+    background:var(--color-bg-secondary);
+
+    border:1px solid var(--color-border);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    margin-bottom:30px;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.earthquakeCard h2{
+
+    color:var(--color-primary);
+
+    margin-bottom:22px;
+
+    font-size:1.8rem;
+
+}
+
+.earthquakeCard ul{
+
+    padding-left:24px;
+
+}
+
+.earthquakeCard li{
+
+    color:var(--color-text-secondary);
+
+    font-size:var(--fs-body);
+
+    line-height:2;
+
+    margin-bottom:12px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .earthquakeSection{
+
+        padding:50px 16px;
+
+    }
+
+    .earthquakeCard{
+
+        padding:24px;
+
+    }
+
+    .earthquakeHeader{
+
+        margin-bottom:40px;
+
+    }
+
+    .earthquakeCard h2{
+
+        font-size:1.45rem;
+
+    }
+
+}

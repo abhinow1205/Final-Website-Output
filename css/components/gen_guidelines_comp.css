@@ -1,0 +1,179 @@
+/* ===========================
+   MINUTES OF MEETING
+=========================== */
+
+.minutesSection{
+
+    padding:70px 20px;
+
+    background:var(--color-bg-primary);
+
+}
+
+.minutesContainer{
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+.minutesHeader{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.minutesHeader h1{
+
+    font-size:var(--fs-h2);
+
+    color:var(--color-text-primary);
+
+    margin-bottom:15px;
+
+}
+
+.minutesHeader p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--color-text-secondary);
+
+    line-height:1.8;
+
+}
+
+.minutesList{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.minuteCard{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    padding:22px 28px;
+
+    background:var(--color-bg-secondary);
+
+    border:1px solid var(--color-border);
+
+    border-radius:16px;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.3s;
+
+}
+
+.minuteCard:hover{
+
+    transform:translateY(-4px);
+
+    border-color:var(--color-primary);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.minuteIcon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:12px;
+
+    background:rgba(76,110,245,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    flex-shrink:0;
+
+}
+
+.minuteContent{
+
+    flex:1;
+
+}
+
+.minuteContent h3{
+
+    color:var(--color-text-primary);
+
+    margin-bottom:8px;
+
+    font-size:1.1rem;
+
+}
+
+.minuteContent span{
+
+    color:var(--color-text-secondary);
+
+    font-size:.95rem;
+
+}
+
+.downloadBtn{
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.downloadBtn:hover{
+
+    background:var(--color-secondary);
+
+}
+
+@media(max-width:768px){
+
+.minuteCard{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.downloadBtn{
+
+width:100%;
+
+}
+
+}

@@ -19,34 +19,52 @@ function initializeInformationHub() {
   const notifications = [
 
     {
-      title: "Fire Week Circular 2025",
-      date: "2025-04-10",
-      file: "../assets/docs/sample1.pdf"
+      title: "Notification for the Fire (Amendment) Act, 2023",
+      date: "2025-05-31",
+      file: "../../assets/docs/notifications/Notification for the Fire (Amendment) Act, 2023.pdf"
     },
 
     {
-      title: "Recruitment Notice",
-      date: "2025-02-12",
-      file: "../assets/docs/sample2.pdf"
+      title: "Notification-UDD-Amendment in Fire Act-Increase in height of Hopital Buildings-06.04.2015",
+      date: "2020-11-30",
+      file: "../../assets/docs/notifications/Notification-UDD-Amendment in Fire Act-Increase in height of Hopital Buildings-06.042015.pdf"
     },
 
     {
-      title: "Government Resolution",
-      date: "2024-12-08",
-      file: "../assets/docs/sample3.pdf"
+      title: "Notification-UDD-Appelate Authority under Act & Rules-30.4.2011",
+      date: "2020-11-30",
+      file: "../../assets/docs/notifications/Notification-UDD-Appelate Authority under Act & Rules-30.4.2011.pdf"
     },
 
     {
-      title: "Awareness Campaign",
-      date: "2024-10-15",
-      file: "../assets/docs/sample4.pdf"
+      title: "Notification-UDD-Appointment of date for Fire Act-English-6.12.2008",
+      date: "2020-11-30",
+      file: "../../assets/docs/notifications/Notification-UDD-Appointment of date for  Fire Act-English-6.12.2008.pdf"
     },
 
     {
-      title: "Training Schedule",
-      date: "2024-08-01",
-      file: "../assets/docs/sample5.pdf"
-    }
+      title: "Notification-UDD-Appointment of date for Fire Act-English-Marathi-07.05.2010",
+      date: "2020-11-30",
+      file: "../../assets/docs/notifications/Notification-UDD-Appointment of date for  Fire Act-English-Marathi-07.05.2010.pdf"
+    },
+
+    {
+      title: "Notification-UDD-Appointment of date for Fire Act (Marathi)-6.12.2008",
+      date: "2020-11-30",
+      file: "../../assets/docs/notifications/Notification-UDD-Appointment of date for Fire Act (Marathi)-6.12.2008.pdf"
+    },
+
+    {
+      title: "Notification-UDD-DMA-RR of Muncipal Councils-30.01.2017",
+      date: "2020-11-30",
+      file: "../../assets/docs/notifications/Notification-UDD-DMA-RR of Muncipal Councils-30.01.2017.pdf"
+    },
+
+    {
+      title: "Notification-UDD-Fire Service Fee-03.03.2014",
+      date: "2020-11-30",
+      file: "../../assets/docs/notifications/Notification-UDD-Fire Service Fee-03.03.2014.pdf"
+    },
 
   ];
 

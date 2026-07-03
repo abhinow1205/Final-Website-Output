@@ -56,9 +56,3 @@ fetch('../components/hero_slider.html')
   document.getElementById('hero_slider').innerHTML = data;
 });
 
-fetch('../components/nav_bar.html')
-.then(response => response.text())
-.then(data => {
-  document.getElementById('navbar').innerHTML = data;
-});
-

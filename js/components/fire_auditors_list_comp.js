@@ -14,7 +14,7 @@ fetch("components/fire_auditors_list_comp.html")
       {
         id: 1,
         title: "Form W and Checklist",
-        category: "",
+        category: "English",
         date: "15 Jul 2025",
         size: "771 KB",
         format: "PDF",
@@ -25,7 +25,7 @@ fetch("components/fire_auditors_list_comp.html")
       {
         id: 2,
         title: "Form W and Checklist",
-        category: "",
+        category: "English",
         date: "15 Jul 2025",
         size: "138 KB",
         format: "DOCX",
@@ -36,7 +36,7 @@ fetch("components/fire_auditors_list_comp.html")
       {
         id: 3,
         title: "List of MF & LSA Approved List Valid up to 31.12.2027",
-        category: "",
+        category: "English",
         date: "02 Feb 2026",
         size: "222 KB",
         format: "PDF",

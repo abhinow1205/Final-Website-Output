@@ -14,7 +14,7 @@ fetch("components/directorate_notification_comp.html")
       {
         id: 1,
         title: "Notification for the Fire (Amendment) Act, 2023",
-        category: "Schemes",
+        category: "Acts",
         date: "31 May 2023",
         size: "240 KB",
         format: "PDF",
@@ -25,7 +25,7 @@ fetch("components/directorate_notification_comp.html")
       {
         id: 2,
         title: "Notification-UDD-Amendment in Fire Act-Increase in height of Hopital Buildings-06.04.2015",
-        category: "Schemes",
+        category: "Acts",
         date: "30 Nov 2020",
         size: "102 KB",
         format: "PDF",
@@ -36,7 +36,7 @@ fetch("components/directorate_notification_comp.html")
       {
         id: 3,
         title: "Notification-UDD-Appelate Authority under Act & Rules-30.4.2011",
-        category: "Finance",
+        category: "Acts",
         date: "30 Nov 2020",
         size: "181 KB",
         format: "PDF",
@@ -47,7 +47,7 @@ fetch("components/directorate_notification_comp.html")
       {
         id: 4,
         title: "Notification-UDD-Appointment of date for Fire Act-English-6.12.2008",
-        category: "Finance",
+        category: "Acts",
         date: "30 Nov 2020",
         size: "1.5 MB",
         format: "PDF",
@@ -58,7 +58,7 @@ fetch("components/directorate_notification_comp.html")
       {
         id: 5,
         title: "Notification-UDD-Appointment of date for Fire Act-English-Marathi-07.05.2010",
-        category: "Finance",
+        category: "Acts",
         date: "30 Nov 2020",
         size: "1.3 MB",
         format: "PDF",
@@ -69,7 +69,7 @@ fetch("components/directorate_notification_comp.html")
       {
         id: 6,
         title: "Notification-UDD-Appointment of date for Fire Act (Marathi)-6.12.2008",
-        category: "Finance",
+        category: "Acts",
         date: "30 Nov 2020",
         size: "1.3 MB",
         format: "PDF",
@@ -80,7 +80,7 @@ fetch("components/directorate_notification_comp.html")
       {
         id: 7,
         title: "Notification-UDD-DMA-RR of Muncipal Councils-30.01.2017",
-        category: "Finance",
+        category: "Others",
         date: "30 Nov 2020",
         size: "256 KB",
         format: "PDF",
@@ -91,7 +91,7 @@ fetch("components/directorate_notification_comp.html")
       {
         id: 8,
         title: "Notification-UDD-Fire Service Fee-03.03.2014",
-        category: "Finance",
+        category: "Others",
         date: "30 Nov 2020",
         size: "45 KB",
         format: "PDF",

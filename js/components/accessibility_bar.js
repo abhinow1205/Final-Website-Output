@@ -85,41 +85,25 @@ function toggleTheme() {
 function initializeLanguageSelector() {
 
     const languageSelector =
-    document.getElementById(
-        "languageSelector"
-    );
+        document.getElementById("languageSelector");
 
     if (!languageSelector) return;
 
+    // Default language
     const savedLanguage =
-    localStorage.getItem(
-        "selectedLanguage"
-    ) || "en";
+        localStorage.getItem("selectedLanguage") || "en";
 
-    languageSelector.value =
-    savedLanguage;
+    // Update dropdown
+    languageSelector.value = savedLanguage;
 
-    changeLanguage(
-        savedLanguage
-    );
+    // Translate page
+    changeLanguage(savedLanguage);
 
-    languageSelector.addEventListener(
-        "change",
-        function() {
+    // Listen for changes
+    languageSelector.addEventListener("change", function () {
 
-            const selectedLanguage =
-            this.value;
+        changeLanguage(this.value);
 
-            localStorage.setItem(
-                "selectedLanguage",
-                selectedLanguage
-            );
-
-            changeLanguage(
-                selectedLanguage
-            );
-
-        }
-    );
+    });
 
 }

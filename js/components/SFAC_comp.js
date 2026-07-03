@@ -14,7 +14,7 @@ fetch("components/SFAC_comp.html")
       {
         id: 1,
         title: "SFAC-39th Meeting Minutes",
-        category: "Schemes",
+        category: "Marathi",
         date: "30 Nov 2020",
         size: "397 KB",
         format: "PDF",
@@ -25,7 +25,7 @@ fetch("components/SFAC_comp.html")
       {
         id: 2,
         title: "SFAC-38th Meeting Minutes",
-        category: "Schemes",
+        category: "English",
         date: "30 Nov 2020",
         size: "52 KB",
         format: "PDF",
@@ -36,7 +36,7 @@ fetch("components/SFAC_comp.html")
       {
         id: 3,
         title: "SFAC-37th Meeting Minutes",
-        category: "Finance",
+        category: "English",
         date: "15 Feb 2022",
         size: "356 KB",
         format: "PDF",
@@ -47,7 +47,7 @@ fetch("components/SFAC_comp.html")
       {
         id: 4,
         title: "SFAC-36th Meeting Minutes",
-        category: "Finance",
+        category: "English",
         date: "15 Feb 2022",
         size: "356 KB",
         format: "PDF",
@@ -58,7 +58,7 @@ fetch("components/SFAC_comp.html")
       {
         id: 5,
         title: "SFAC-35th Meeting Minutes",
-        category: "Finance",
+        category: "English",
         date: "15 Feb 2022",
         size: "356 KB",
         format: "PDF",
@@ -69,7 +69,7 @@ fetch("components/SFAC_comp.html")
       {
         id: 6,
         title: "SFAC-34th Meeting Minutes",
-        category: "Finance",
+        category: "English",
         date: "15 Feb 2022",
         size: "356 KB",
         format: "PDF",
@@ -80,7 +80,7 @@ fetch("components/SFAC_comp.html")
       {
         id: 7,
         title: "SFAC-33th Meeting Minutes",
-        category: "Finance",
+        category: "English",
         date: "15 Feb 2022",
         size: "356 KB",
         format: "PDF",
@@ -91,7 +91,7 @@ fetch("components/SFAC_comp.html")
       {
         id: 8,
         title: "SFAC-32th Meeting Minutes",
-        category: "Finance",
+        category: "English",
         date: "15 Feb 2022",
         size: "356 KB",
         format: "PDF",

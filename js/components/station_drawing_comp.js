@@ -14,7 +14,7 @@ fetch("components/station_drawing_comp.html")
       {
         id: 1,
         title: "TYPE I Fire Station Model",
-        category: "Schemes",
+        category: "Marathi",
         date: "30 Nov 2020",
         size: "231 KB",
         format: "PDF",
@@ -25,7 +25,7 @@ fetch("components/station_drawing_comp.html")
       {
         id: 2,
         title: "TYPE II Fire Station Model",
-        category: "Schemes",
+        category: "English",
         date: "30 Nov 2020",
         size: "204 KB",
         format: "PDF",
@@ -36,7 +36,7 @@ fetch("components/station_drawing_comp.html")
       {
         id: 3,
         title: "TYPE III Fire Station Model",
-        category: "Finance",
+        category: "English",
         date: "30 Nov 2020",
         size: "184 KB",
         format: "PDF",
@@ -47,7 +47,7 @@ fetch("components/station_drawing_comp.html")
       {
         id: 4,
         title: "TYPE IV Fire Station Model",
-        category: "Finance",
+        category: "English",
         date: "30 Nov 2020",
         size: "179 KB",
         format: "PDF",

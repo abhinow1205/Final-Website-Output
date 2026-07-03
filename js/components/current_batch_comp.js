@@ -14,7 +14,7 @@ fetch("components/current_batch_comp.html")
       {
         id: 1,
         title: "2nd list of fireman batch jan 2020",
-        category: "Schemes",
+        category: "Marathi",
         date: "30 Dec 2021",
         size: "6.1 MB",
         format: "PDF",
@@ -25,7 +25,7 @@ fetch("components/current_batch_comp.html")
       {
         id: 2,
         title: "Instruction to Female Candidate Fireman Jan-June 2022 batch",
-        category: "Schemes",
+        category: "Marathi",
         date: "16 Nov 2021",
         size: "5.2 MB",
         format: "PDF",
@@ -36,7 +36,7 @@ fetch("components/current_batch_comp.html")
       {
         id: 3,
         title: "Instruction to Male Candidate Fireman Jan-June 2022 batch",
-        category: "Finance",
+        category: "Marathi",
         date: "16 Nov 2021",
         size: "21.5 MB",
         format: "PDF",
@@ -47,7 +47,7 @@ fetch("components/current_batch_comp.html")
       {
         id: 4,
         title: "JAN-16 FTC Batch",
-        category: "Finance",
+        category: "English",
         date: "30 Nov 2020",
         size: "121 KB",
         format: "PDF",
@@ -58,7 +58,7 @@ fetch("components/current_batch_comp.html")
       {
         id: 5,
         title: "JAN-16 SO Batch",
-        category: "Finance",
+        category: "English",
         date: "30 Nov 2020",
         size: "103 KB",
         format: "PDF",
@@ -69,7 +69,7 @@ fetch("components/current_batch_comp.html")
       {
         id: 6,
         title: "JUL-16 FTC Batch",
-        category: "Finance",
+        category: "English",
         date: "30 Nov 2020",
         size: "76 KB",
         format: "PDF",

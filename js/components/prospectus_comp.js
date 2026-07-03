@@ -14,7 +14,7 @@ fetch("components/prospectus_comp.html")
       {
         id: 1,
         title: "Prospectus Sponsor's Candidate",
-        category: "Schemes",
+        category: "Marathi",
         date: "30 Nov 2020",
         size: "36 KB",
         format: "PDF",
@@ -25,7 +25,7 @@ fetch("components/prospectus_comp.html")
       {
         id: 2,
         title: "Prospectus of Fireman's Course (Pvt)",
-        category: "Schemes",
+        category: "Marathi",
         date: "30 Nov 2020",
         size: "23 KB",
         format: "PDF",
@@ -36,7 +36,7 @@ fetch("components/prospectus_comp.html")
       {
         id: 3,
         title: "Prospectus of SubOfficer's Course (Pvt)",
-        category: "Finance",
+        category: "Marathi",
         date: "30 Nov 2020",
         size: "19 KB",
         format: "PDF",
@@ -47,7 +47,7 @@ fetch("components/prospectus_comp.html")
       {
         id: 4,
         title: "SFTC-Prospectus of High Rise Building Course",
-        category: "Finance",
+        category: "English",
         date: "30 Nov 2020",
         size: "67 KB",
         format: "PDF",

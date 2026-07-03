@@ -23,8 +23,3 @@ document.addEventListener(
 }
 );
 
-fetch('../components/nav_bar.html')
-.then(response => response.text())
-.then(data => {
-  document.getElementById('navbar').innerHTML = data;
-});
